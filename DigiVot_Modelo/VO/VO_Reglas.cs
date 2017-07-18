@@ -11,7 +11,5 @@ namespace DigiVot_Modelo
         public int idRegla { get; set; }
         public string  Regla { get; set; }
         public  string Descripcion { get; set; }
-
-       
     }
 }

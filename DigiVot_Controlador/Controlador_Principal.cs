@@ -58,6 +58,39 @@ namespace DigiVot_Controlador
             vPrincipal.btnAsignaciones.Click += Click_Asignaciones;
             vPrincipal.btnConfiguracion.Click += Click_Configuraciones;
             vPrincipal.btnAyuda.Click += Click_Ayuda;
+            vPrincipal.btnMenu.Click += Click_Menu;
+            vPrincipal.btnCandidatos.Click += Click_Candidatos;
+            vPrincipal.btnCiudadanos.Click += CLick_Ciudadano;
+        }
+
+        private void CLick_Ciudadano(object sender, EventArgs e)
+        {
+            Vista_Ciudadano vCiudadano = new Vista_Ciudadano();
+            //Controlador_Asignador conAsignador = new Controlador_Asignador(vAsignador);
+            CentrarFormularios(vCiudadano );
+        }
+
+        private void Click_Candidatos(object sender, EventArgs e)
+        {
+            Vista_Candidato vCandidato = new Vista_Candidato();
+            Controlador_Candidato conCandidato = new Controlador_Candidato(vCandidato);
+            CentrarFormularios(vCandidato);
+        }
+
+        private void Click_Menu(object sender, EventArgs e)
+        {
+            if (vPrincipal.pnlContMenuLateral.Width == 50)
+            {
+                vPrincipal.pnlContMenuLateral.Visible = false;
+                vPrincipal.pnlContMenuLateral.Width = 194;
+                vPrincipal.AnimacionMenuLateral.ShowSync(vPrincipal.pnlContMenuLateral);
+            }
+            else
+            {
+                vPrincipal.pnlContMenuLateral.Visible = false;
+                vPrincipal.pnlContMenuLateral.Width = 50;
+                vPrincipal.AnimacionMenuLateral.ShowSync(vPrincipal.pnlContMenuLateral);
+            }
         }
 
         private bool TickTimers(Timer timer,Panel panel,bool esColapzadoPanel)
@@ -169,7 +202,7 @@ namespace DigiVot_Controlador
                 vPrincipal.pnlConfiguracion.Visible = false;
             }
 
-            vPrincipal.pnlAltas.Visible = TieneRegla("4");
+           // vPrincipal.pnlAltas.Visible = TieneRegla("4");
 
         }
         bool TieneRegla(string Reglas_checar)

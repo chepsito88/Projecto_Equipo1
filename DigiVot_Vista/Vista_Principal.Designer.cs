@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vista_Principal));
             this.pnlSuperior = new System.Windows.Forms.Panel();
             this.btnMinimizar = new FontAwesome.Sharp.IconPictureBox();
@@ -75,6 +76,7 @@
             this.tmrColapzarAsignaciones = new System.Windows.Forms.Timer(this.components);
             this.tmrColapzarConfiguraciones = new System.Windows.Forms.Timer(this.components);
             this.tmrColapzarAyuda = new System.Windows.Forms.Timer(this.components);
+            this.AnimacionMenuLateral = new Guna.UI2.WinForms.Guna2Transition();
             this.pnlSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalirApp)).BeginInit();
@@ -94,6 +96,7 @@
             this.pnlSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(80)))), ((int)(((byte)(220)))));
             this.pnlSuperior.Controls.Add(this.btnMinimizar);
             this.pnlSuperior.Controls.Add(this.btnSalirApp);
+            this.AnimacionMenuLateral.SetDecoration(this.pnlSuperior, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pnlSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSuperior.Location = new System.Drawing.Point(0, 0);
             this.pnlSuperior.Name = "pnlSuperior";
@@ -105,6 +108,7 @@
             this.btnMinimizar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnMinimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(80)))), ((int)(((byte)(220)))));
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimacionMenuLateral.SetDecoration(this.btnMinimizar, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnMinimizar.IconChar = FontAwesome.Sharp.IconChar.Minus;
             this.btnMinimizar.IconColor = System.Drawing.Color.White;
             this.btnMinimizar.Location = new System.Drawing.Point(1306, 3);
@@ -118,6 +122,7 @@
             this.btnSalirApp.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnSalirApp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(80)))), ((int)(((byte)(220)))));
             this.btnSalirApp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimacionMenuLateral.SetDecoration(this.btnSalirApp, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnSalirApp.IconChar = FontAwesome.Sharp.IconChar.Times;
             this.btnSalirApp.IconColor = System.Drawing.Color.White;
             this.btnSalirApp.Location = new System.Drawing.Point(1344, 3);
@@ -134,6 +139,7 @@
             this.pnlContMenuLateral.Controls.Add(this.lblNomUsuario);
             this.pnlContMenuLateral.Controls.Add(this.btnCerrarSesion);
             this.pnlContMenuLateral.Controls.Add(this.ptbFotoUser);
+            this.AnimacionMenuLateral.SetDecoration(this.pnlContMenuLateral, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pnlContMenuLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlContMenuLateral.Location = new System.Drawing.Point(0, 37);
             this.pnlContMenuLateral.MinimumSize = new System.Drawing.Size(50, 1020);
@@ -146,6 +152,7 @@
             this.btnMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMenu.BackColor = System.Drawing.Color.Transparent;
             this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimacionMenuLateral.SetDecoration(this.btnMenu, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnMenu.IconChar = FontAwesome.Sharp.IconChar.List;
             this.btnMenu.IconColor = System.Drawing.Color.White;
             this.btnMenu.Location = new System.Drawing.Point(156, 6);
@@ -163,6 +170,7 @@
             this.pnlContBotones.Controls.Add(this.pnlAsignaciones);
             this.pnlContBotones.Controls.Add(this.pnlConfiguracion);
             this.pnlContBotones.Controls.Add(this.pnlAyuda);
+            this.AnimacionMenuLateral.SetDecoration(this.pnlContBotones, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pnlContBotones.Location = new System.Drawing.Point(4, 233);
             this.pnlContBotones.Name = "pnlContBotones";
             this.pnlContBotones.Padding = new System.Windows.Forms.Padding(4, 4, 0, 0);
@@ -178,6 +186,7 @@
             this.btnMiPerfil.CheckedState.Parent = this.btnMiPerfil;
             this.btnMiPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMiPerfil.CustomImages.Parent = this.btnMiPerfil;
+            this.AnimacionMenuLateral.SetDecoration(this.btnMiPerfil, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnMiPerfil.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
             this.btnMiPerfil.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMiPerfil.ForeColor = System.Drawing.Color.White;
@@ -204,6 +213,7 @@
             this.pnlAltas.Controls.Add(this.btnCiudadanos);
             this.pnlAltas.Controls.Add(this.btnCandidatos);
             this.pnlAltas.Controls.Add(this.btnAltas);
+            this.AnimacionMenuLateral.SetDecoration(this.pnlAltas, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pnlAltas.Location = new System.Drawing.Point(7, 48);
             this.pnlAltas.MaximumSize = new System.Drawing.Size(173, 293);
             this.pnlAltas.MinimumSize = new System.Drawing.Size(173, 40);
@@ -219,6 +229,7 @@
             this.btnElecciones.CheckedState.Parent = this.btnElecciones;
             this.btnElecciones.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnElecciones.CustomImages.Parent = this.btnElecciones;
+            this.AnimacionMenuLateral.SetDecoration(this.btnElecciones, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnElecciones.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.btnElecciones.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnElecciones.ForeColor = System.Drawing.Color.White;
@@ -241,6 +252,7 @@
             this.btnCasillaVirtual.CheckedState.Parent = this.btnCasillaVirtual;
             this.btnCasillaVirtual.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCasillaVirtual.CustomImages.Parent = this.btnCasillaVirtual;
+            this.AnimacionMenuLateral.SetDecoration(this.btnCasillaVirtual, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnCasillaVirtual.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.btnCasillaVirtual.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCasillaVirtual.ForeColor = System.Drawing.Color.White;
@@ -263,6 +275,7 @@
             this.btnMesaDirectiva.CheckedState.Parent = this.btnMesaDirectiva;
             this.btnMesaDirectiva.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMesaDirectiva.CustomImages.Parent = this.btnMesaDirectiva;
+            this.AnimacionMenuLateral.SetDecoration(this.btnMesaDirectiva, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnMesaDirectiva.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.btnMesaDirectiva.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesaDirectiva.ForeColor = System.Drawing.Color.White;
@@ -285,6 +298,7 @@
             this.btnFuncionarios.CheckedState.Parent = this.btnFuncionarios;
             this.btnFuncionarios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFuncionarios.CustomImages.Parent = this.btnFuncionarios;
+            this.AnimacionMenuLateral.SetDecoration(this.btnFuncionarios, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnFuncionarios.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.btnFuncionarios.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFuncionarios.ForeColor = System.Drawing.Color.White;
@@ -307,6 +321,7 @@
             this.btnPartidos.CheckedState.Parent = this.btnPartidos;
             this.btnPartidos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPartidos.CustomImages.Parent = this.btnPartidos;
+            this.AnimacionMenuLateral.SetDecoration(this.btnPartidos, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnPartidos.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.btnPartidos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPartidos.ForeColor = System.Drawing.Color.White;
@@ -329,6 +344,7 @@
             this.btnCiudadanos.CheckedState.Parent = this.btnCiudadanos;
             this.btnCiudadanos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCiudadanos.CustomImages.Parent = this.btnCiudadanos;
+            this.AnimacionMenuLateral.SetDecoration(this.btnCiudadanos, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnCiudadanos.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.btnCiudadanos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCiudadanos.ForeColor = System.Drawing.Color.White;
@@ -351,6 +367,7 @@
             this.btnCandidatos.CheckedState.Parent = this.btnCandidatos;
             this.btnCandidatos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCandidatos.CustomImages.Parent = this.btnCandidatos;
+            this.AnimacionMenuLateral.SetDecoration(this.btnCandidatos, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnCandidatos.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.btnCandidatos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnCandidatos.ForeColor = System.Drawing.Color.White;
@@ -374,6 +391,7 @@
             this.btnAltas.CheckedState.Parent = this.btnAltas;
             this.btnAltas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAltas.CustomImages.Parent = this.btnAltas;
+            this.AnimacionMenuLateral.SetDecoration(this.btnAltas, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnAltas.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
             this.btnAltas.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAltas.ForeColor = System.Drawing.Color.White;
@@ -396,6 +414,7 @@
             this.pnlReportes.Controls.Add(this.btnEstatal);
             this.pnlReportes.Controls.Add(this.btnNacional);
             this.pnlReportes.Controls.Add(this.btnReportes);
+            this.AnimacionMenuLateral.SetDecoration(this.pnlReportes, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pnlReportes.Location = new System.Drawing.Point(7, 94);
             this.pnlReportes.MaximumSize = new System.Drawing.Size(173, 148);
             this.pnlReportes.MinimumSize = new System.Drawing.Size(173, 40);
@@ -411,6 +430,7 @@
             this.btnLocal.CheckedState.Parent = this.btnLocal;
             this.btnLocal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLocal.CustomImages.Parent = this.btnLocal;
+            this.AnimacionMenuLateral.SetDecoration(this.btnLocal, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnLocal.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.btnLocal.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLocal.ForeColor = System.Drawing.Color.White;
@@ -433,6 +453,7 @@
             this.btnEstatal.CheckedState.Parent = this.btnEstatal;
             this.btnEstatal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEstatal.CustomImages.Parent = this.btnEstatal;
+            this.AnimacionMenuLateral.SetDecoration(this.btnEstatal, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnEstatal.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.btnEstatal.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstatal.ForeColor = System.Drawing.Color.White;
@@ -455,6 +476,7 @@
             this.btnNacional.CheckedState.Parent = this.btnNacional;
             this.btnNacional.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNacional.CustomImages.Parent = this.btnNacional;
+            this.AnimacionMenuLateral.SetDecoration(this.btnNacional, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnNacional.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.btnNacional.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnNacional.ForeColor = System.Drawing.Color.White;
@@ -478,6 +500,7 @@
             this.btnReportes.CheckedState.Parent = this.btnReportes;
             this.btnReportes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReportes.CustomImages.Parent = this.btnReportes;
+            this.AnimacionMenuLateral.SetDecoration(this.btnReportes, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnReportes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
             this.btnReportes.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.ForeColor = System.Drawing.Color.White;
@@ -498,6 +521,7 @@
             this.pnlAsignaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(80)))), ((int)(((byte)(220)))));
             this.pnlAsignaciones.Controls.Add(this.btbFuncionario_MD);
             this.pnlAsignaciones.Controls.Add(this.btnAsignaciones);
+            this.AnimacionMenuLateral.SetDecoration(this.pnlAsignaciones, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pnlAsignaciones.Location = new System.Drawing.Point(7, 140);
             this.pnlAsignaciones.MaximumSize = new System.Drawing.Size(173, 76);
             this.pnlAsignaciones.MinimumSize = new System.Drawing.Size(173, 40);
@@ -513,6 +537,7 @@
             this.btbFuncionario_MD.CheckedState.Parent = this.btbFuncionario_MD;
             this.btbFuncionario_MD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btbFuncionario_MD.CustomImages.Parent = this.btbFuncionario_MD;
+            this.AnimacionMenuLateral.SetDecoration(this.btbFuncionario_MD, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btbFuncionario_MD.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.btbFuncionario_MD.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.btbFuncionario_MD.ForeColor = System.Drawing.Color.White;
@@ -536,6 +561,7 @@
             this.btnAsignaciones.CheckedState.Parent = this.btnAsignaciones;
             this.btnAsignaciones.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAsignaciones.CustomImages.Parent = this.btnAsignaciones;
+            this.AnimacionMenuLateral.SetDecoration(this.btnAsignaciones, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnAsignaciones.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
             this.btnAsignaciones.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAsignaciones.ForeColor = System.Drawing.Color.White;
@@ -559,6 +585,7 @@
             this.pnlConfiguracion.Controls.Add(this.btnPerfiles);
             this.pnlConfiguracion.Controls.Add(this.btnUsuarios);
             this.pnlConfiguracion.Controls.Add(this.btnConfiguracion);
+            this.AnimacionMenuLateral.SetDecoration(this.pnlConfiguracion, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pnlConfiguracion.Location = new System.Drawing.Point(7, 186);
             this.pnlConfiguracion.MaximumSize = new System.Drawing.Size(173, 187);
             this.pnlConfiguracion.MinimumSize = new System.Drawing.Size(173, 40);
@@ -574,6 +601,7 @@
             this.btnAsignacion.CheckedState.Parent = this.btnAsignacion;
             this.btnAsignacion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAsignacion.CustomImages.Parent = this.btnAsignacion;
+            this.AnimacionMenuLateral.SetDecoration(this.btnAsignacion, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnAsignacion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.btnAsignacion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnAsignacion.ForeColor = System.Drawing.Color.White;
@@ -596,6 +624,7 @@
             this.btnReglas.CheckedState.Parent = this.btnReglas;
             this.btnReglas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReglas.CustomImages.Parent = this.btnReglas;
+            this.AnimacionMenuLateral.SetDecoration(this.btnReglas, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnReglas.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.btnReglas.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnReglas.ForeColor = System.Drawing.Color.White;
@@ -618,6 +647,7 @@
             this.btnPerfiles.CheckedState.Parent = this.btnPerfiles;
             this.btnPerfiles.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPerfiles.CustomImages.Parent = this.btnPerfiles;
+            this.AnimacionMenuLateral.SetDecoration(this.btnPerfiles, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnPerfiles.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.btnPerfiles.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnPerfiles.ForeColor = System.Drawing.Color.White;
@@ -640,6 +670,7 @@
             this.btnUsuarios.CheckedState.Parent = this.btnUsuarios;
             this.btnUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUsuarios.CustomImages.Parent = this.btnUsuarios;
+            this.AnimacionMenuLateral.SetDecoration(this.btnUsuarios, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnUsuarios.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.btnUsuarios.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnUsuarios.ForeColor = System.Drawing.Color.White;
@@ -663,6 +694,7 @@
             this.btnConfiguracion.CheckedState.Parent = this.btnConfiguracion;
             this.btnConfiguracion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfiguracion.CustomImages.Parent = this.btnConfiguracion;
+            this.AnimacionMenuLateral.SetDecoration(this.btnConfiguracion, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnConfiguracion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
             this.btnConfiguracion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfiguracion.ForeColor = System.Drawing.Color.White;
@@ -686,6 +718,7 @@
             this.pnlAyuda.Controls.Add(this.btnSoporteTecnico);
             this.pnlAyuda.Controls.Add(this.btnVerlaAyuda);
             this.pnlAyuda.Controls.Add(this.btnAyuda);
+            this.AnimacionMenuLateral.SetDecoration(this.pnlAyuda, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pnlAyuda.Location = new System.Drawing.Point(7, 232);
             this.pnlAyuda.MaximumSize = new System.Drawing.Size(173, 187);
             this.pnlAyuda.MinimumSize = new System.Drawing.Size(173, 40);
@@ -701,6 +734,7 @@
             this.btnAcercade.CheckedState.Parent = this.btnAcercade;
             this.btnAcercade.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAcercade.CustomImages.Parent = this.btnAcercade;
+            this.AnimacionMenuLateral.SetDecoration(this.btnAcercade, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnAcercade.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.btnAcercade.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnAcercade.ForeColor = System.Drawing.Color.White;
@@ -723,6 +757,7 @@
             this.btnBuscarActulizaciones.CheckedState.Parent = this.btnBuscarActulizaciones;
             this.btnBuscarActulizaciones.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscarActulizaciones.CustomImages.Parent = this.btnBuscarActulizaciones;
+            this.AnimacionMenuLateral.SetDecoration(this.btnBuscarActulizaciones, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnBuscarActulizaciones.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.btnBuscarActulizaciones.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnBuscarActulizaciones.ForeColor = System.Drawing.Color.White;
@@ -745,6 +780,7 @@
             this.btnSoporteTecnico.CheckedState.Parent = this.btnSoporteTecnico;
             this.btnSoporteTecnico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSoporteTecnico.CustomImages.Parent = this.btnSoporteTecnico;
+            this.AnimacionMenuLateral.SetDecoration(this.btnSoporteTecnico, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnSoporteTecnico.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.btnSoporteTecnico.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnSoporteTecnico.ForeColor = System.Drawing.Color.White;
@@ -767,6 +803,7 @@
             this.btnVerlaAyuda.CheckedState.Parent = this.btnVerlaAyuda;
             this.btnVerlaAyuda.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVerlaAyuda.CustomImages.Parent = this.btnVerlaAyuda;
+            this.AnimacionMenuLateral.SetDecoration(this.btnVerlaAyuda, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnVerlaAyuda.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.btnVerlaAyuda.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnVerlaAyuda.ForeColor = System.Drawing.Color.White;
@@ -790,6 +827,7 @@
             this.btnAyuda.CheckedState.Parent = this.btnAyuda;
             this.btnAyuda.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAyuda.CustomImages.Parent = this.btnAyuda;
+            this.AnimacionMenuLateral.SetDecoration(this.btnAyuda, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnAyuda.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
             this.btnAyuda.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAyuda.ForeColor = System.Drawing.Color.White;
@@ -808,6 +846,7 @@
             // lblNomUsuario
             // 
             this.lblNomUsuario.AutoSize = true;
+            this.AnimacionMenuLateral.SetDecoration(this.lblNomUsuario, Guna.UI2.AnimatorNS.DecorationType.None);
             this.lblNomUsuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomUsuario.ForeColor = System.Drawing.Color.White;
             this.lblNomUsuario.Location = new System.Drawing.Point(52, 162);
@@ -825,6 +864,7 @@
             this.btnCerrarSesion.CheckedState.Parent = this.btnCerrarSesion;
             this.btnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrarSesion.CustomImages.Parent = this.btnCerrarSesion;
+            this.AnimacionMenuLateral.SetDecoration(this.btnCerrarSesion, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnCerrarSesion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
             this.btnCerrarSesion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
@@ -842,6 +882,7 @@
             // 
             // ptbFotoUser
             // 
+            this.AnimacionMenuLateral.SetDecoration(this.ptbFotoUser, Guna.UI2.AnimatorNS.DecorationType.None);
             this.ptbFotoUser.Image = ((System.Drawing.Image)(resources.GetObject("ptbFotoUser.Image")));
             this.ptbFotoUser.Location = new System.Drawing.Point(50, 40);
             this.ptbFotoUser.Name = "ptbFotoUser";
@@ -855,6 +896,7 @@
             // pnlContenedorFormularios
             // 
             this.pnlContenedorFormularios.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.AnimacionMenuLateral.SetDecoration(this.pnlContenedorFormularios, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pnlContenedorFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenedorFormularios.Location = new System.Drawing.Point(194, 37);
             this.pnlContenedorFormularios.Name = "pnlContenedorFormularios";
@@ -881,6 +923,27 @@
             // 
             this.tmrColapzarAyuda.Interval = 10;
             // 
+            // AnimacionMenuLateral
+            // 
+            this.AnimacionMenuLateral.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
+            this.AnimacionMenuLateral.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.AnimacionMenuLateral.DefaultAnimation = animation1;
+            // 
             // Vista_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -889,6 +952,7 @@
             this.Controls.Add(this.pnlContenedorFormularios);
             this.Controls.Add(this.pnlContMenuLateral);
             this.Controls.Add(this.pnlSuperior);
+            this.AnimacionMenuLateral.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Vista_Principal";
             this.Text = "Vista_Principa";
@@ -957,5 +1021,6 @@
         public System.Windows.Forms.Timer tmrColapzarAsignaciones;
         public System.Windows.Forms.Timer tmrColapzarConfiguraciones;
         public System.Windows.Forms.Timer tmrColapzarAyuda;
+        public Guna.UI2.WinForms.Guna2Transition AnimacionMenuLateral;
     }
 }

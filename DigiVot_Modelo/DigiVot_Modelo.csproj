@@ -42,12 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract_Factory\Construye_DAO.cs" />
+    <Compile Include="DAO\DAO_Candidato.cs" />
     <Compile Include="DAO\DAO_Reglas.cs" />
     <Compile Include="DAO\DAO_Perfiles.cs" />
     <Compile Include="Abstract_Factory\ICrud.cs" />
     <Compile Include="DAO\DAO_PerfilReglas.cs" />
     <Compile Include="DAO\DAO_Login.cs" />
     <Compile Include="Singleton\Singleton_Conexion.cs" />
+    <Compile Include="VO\VO_Candidato.cs" />
     <Compile Include="VO\VO_Reglas.cs" />
     <Compile Include="VO\VO_Perfil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

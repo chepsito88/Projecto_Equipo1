@@ -53,6 +53,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controlador_Asignador.cs" />
+    <Compile Include="Controlador_Candidato.cs" />
+    <Compile Include="Controlador_Ciudadano.cs" />
     <Compile Include="Controlador_Login.cs" />
     <Compile Include="Controlador_Perfil.cs" />
     <Compile Include="Controlador_Principal.cs" />

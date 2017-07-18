@@ -49,3 +49,5 @@ C:\Projecto\Projecto_Equipo1\DigiVot_Vista\obj\Debug\DigiVot_Vista.csproj.CoreCo
 C:\Projecto\Projecto_Equipo1\DigiVot_Vista\obj\Debug\DigiVot_Vista.csproj.CopyComplete
 C:\Projecto\Projecto_Equipo1\DigiVot_Vista\obj\Debug\DigiVot_Vista.dll
 C:\Projecto\Projecto_Equipo1\DigiVot_Vista\obj\Debug\DigiVot_Vista.pdb
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Vista\obj\Debug\DigiVot_Vista.Vista_Candidato.resources
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Vista\obj\Debug\DigiVot_Vista.Vista_Ciudadano.resources
