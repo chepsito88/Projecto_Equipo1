@@ -1,0 +1,6 @@
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Modelo\obj\Debug\DigiVot_Modelo.csprojAssemblyReference.cache
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Modelo\obj\Debug\DigiVot_Modelo.csproj.CoreCompileInputs.cache
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Modelo\bin\Debug\DigiVot_Modelo.dll
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Modelo\bin\Debug\DigiVot_Modelo.pdb
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Modelo\obj\Debug\DigiVot_Modelo.dll
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Modelo\obj\Debug\DigiVot_Modelo.pdb

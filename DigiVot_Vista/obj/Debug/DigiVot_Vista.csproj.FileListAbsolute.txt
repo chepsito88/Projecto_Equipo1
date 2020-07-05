@@ -1,0 +1,17 @@
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Vista\bin\Debug\DigiVot_Vista.dll
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Vista\bin\Debug\DigiVot_Vista.pdb
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Vista\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Vista\bin\Debug\PlaceholderTextBox.dll
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Vista\obj\Debug\DigiVot_Vista.csprojAssemblyReference.cache
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Vista\obj\Debug\DigiVot_Vista.Vista_Principal.resources
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Vista\obj\Debug\DigiVot_Vista.Vista_Asignador.resources
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Vista\obj\Debug\DigiVot_Vista.Vista_Perfiles.resources
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Vista\obj\Debug\DigiVot_Vista.Vista_Reglas.resources
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Vista\obj\Debug\DigiVot_Vista.csproj.GenerateResource.cache
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Vista\obj\Debug\DigiVot_Vista.csproj.CoreCompileInputs.cache
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Vista\obj\Debug\DigiVot_Vista.csproj.CopyComplete
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Vista\obj\Debug\DigiVot_Vista.dll
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Vista\obj\Debug\DigiVot_Vista.pdb
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Vista\obj\Debug\DigiVot_Vista.Properties.Resources.resources
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Vista\obj\Debug\DigiVot_Vista.Vista_Login.resources
+C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Vista\obj\Debug\DigiVot_Vista.Vista_Splash.resources
