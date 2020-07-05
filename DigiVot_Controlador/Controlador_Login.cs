@@ -104,11 +104,6 @@ namespace DigiVot_Controlador
             ReleaseCapture();
             SendMessage(Vista.Handle, 0x112, 0xf012, 0);
         }
-
-	public void mensaje(){
-		
-	}	
-
-      
+	      
     }
 }
