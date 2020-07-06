@@ -4,3 +4,9 @@ C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Mo
 C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Modelo\bin\Debug\DigiVot_Modelo.pdb
 C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Modelo\obj\Debug\DigiVot_Modelo.dll
 C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Modelo\obj\Debug\DigiVot_Modelo.pdb
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Modelo\bin\Debug\DigiVot_Modelo.dll
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Modelo\bin\Debug\DigiVot_Modelo.pdb
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Modelo\obj\Debug\DigiVot_Modelo.csprojAssemblyReference.cache
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Modelo\obj\Debug\DigiVot_Modelo.csproj.CoreCompileInputs.cache
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Modelo\obj\Debug\DigiVot_Modelo.dll
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Modelo\obj\Debug\DigiVot_Modelo.pdb

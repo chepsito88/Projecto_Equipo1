@@ -92,5 +92,9 @@ namespace DigiVot_Controlador
             }
             return false;
         }
+        public void mensaje()
+        {
+
+        }
     }
 }

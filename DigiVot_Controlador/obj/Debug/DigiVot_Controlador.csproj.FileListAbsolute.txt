@@ -11,3 +11,16 @@ C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Co
 C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.csproj.CopyComplete
 C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.dll
 C:\Users\Eusebio\Documents\9°\Programacion\Practicas\DigiVot\Digivot\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.pdb
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Controlador\bin\Debug\DigiVot_Controlador.dll
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Controlador\bin\Debug\DigiVot_Controlador.pdb
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Controlador\bin\Debug\DigiVot_Modelo.dll
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Controlador\bin\Debug\DigiVot_Vista.dll
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Controlador\bin\Debug\FontAwesome.Sharp.dll
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Controlador\bin\Debug\PlaceholderTextBox.dll
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Controlador\bin\Debug\DigiVot_Modelo.pdb
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Controlador\bin\Debug\DigiVot_Vista.pdb
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.csprojAssemblyReference.cache
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.csproj.CoreCompileInputs.cache
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.csproj.CopyComplete
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.dll
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.pdb
