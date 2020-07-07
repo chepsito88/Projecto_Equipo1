@@ -16,10 +16,5 @@ namespace DigiVot_Vista
         {
             InitializeComponent();
         }
-
-        private void nacionalesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

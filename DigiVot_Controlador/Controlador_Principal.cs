@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace DigiVot_Controlador
 {
-    class Controlador_Principal
+    public class Controlador_Principal
     {
         DigiVot_Vista.Vista_Principal vPrincipal;
         VO_User voUser;       
-        string _Rol;              
+        string _Rol;
+        private bool esColapzadoAltas;
+
         public Controlador_Principal(DigiVot_Vista.Vista_Principal vPrincipal,VO_User voUser)
         {
             this.vPrincipal = vPrincipal;
@@ -23,13 +25,52 @@ namespace DigiVot_Controlador
             vPrincipal.btnPerfiles.Click += Peril_Click;
             vPrincipal.btnReglas.Click += Click_Reglas;
             vPrincipal.btnAsignacion.Click += Click_Asignacion;
-            vPrincipal.FormClosing += Cerrando;
-           
+
+            vPrincipal.btnSalirApp.Click += Click_SalirApp;
+            vPrincipal.btnMinimizar.Click += Click_Minimizar;
+            vPrincipal.tmrColapzarAltas.Start();//se inicializa el taimer para que se muestre los subbotones de altas
+            vPrincipal.tmrColapzarAltas.Tick += TickTmrAltas;
+            vPrincipal.btnAltas.Click += Click_Altas;
         }
 
-        private void Cerrando(object sender, FormClosingEventArgs e)
+        private void Click_Altas(object sender, EventArgs e)
         {
-            Application.Exit();
+            vPrincipal.tmrColapzarAltas.Start();
+        }
+
+        private void TickTmrAltas(object sender, EventArgs e)
+        {
+            if (esColapzadoAltas)
+            {
+                vPrincipal.pnlAltas.Height += 10;
+                if (vPrincipal.pnlAltas.Size == vPrincipal.pnlAltas.MaximumSize)
+                {
+                    vPrincipal.tmrColapzarAltas.Stop();
+                    esColapzadoAltas = false;
+                }
+            }
+            else
+            {
+                vPrincipal.pnlAltas.Height -= 10;
+                if (vPrincipal.pnlAltas.Size == vPrincipal.pnlAltas.MinimumSize)
+                {
+                    vPrincipal.tmrColapzarAltas.Stop();
+                    esColapzadoAltas = true;
+                }
+            }
+        }
+
+        private void Click_Minimizar(object sender, EventArgs e)
+        {
+            vPrincipal.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Click_SalirApp(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Esta seguro de cerrar la aplicación?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void Click_Asignacion(object sender, EventArgs e)
@@ -66,17 +107,16 @@ namespace DigiVot_Controlador
             _Rol= voUser.Puesto;
             vPrincipal.Text = "Bienvenido: " + voUser.Nombre;
             Permisos();
-     
         }
 
         private void Permisos()
         {
             if (voUser.Puesto!= "Administrador")
             {
-                vPrincipal.mnuConfinguracion.Visible = false;
+                vPrincipal.pnlConfiguracion.Visible = false;
             }
 
-            vPrincipal.mnuAltas.Visible = TieneRegla("4");
+            vPrincipal.pnlAltas.Visible = TieneRegla("4");
 
         }
 
@@ -91,10 +131,6 @@ namespace DigiVot_Controlador
                 }
             }
             return false;
-        }
-        public void mensaje()
-        {
-
         }
     }
 }

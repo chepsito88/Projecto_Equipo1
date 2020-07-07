@@ -34,6 +34,9 @@
     <Reference Include="FontAwesome.Sharp">
       <HintPath>..\packages\FontAwesome.Sharp.5.13.0\lib\net45\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\Users\hgabi\Documents\Apliaciones\Framework\Guna\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="PlaceholderTextBox">
       <HintPath>..\packages\PlaceholderTextBox.1.3.1\lib\PlaceholderTextBox.dll</HintPath>
     </Reference>

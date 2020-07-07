@@ -78,7 +78,7 @@ namespace DigiVot_Controlador
             VO_User voUser = new VO_User();
             voUser.Nombre = Vista.txtUsuario.Text;
             voUser.password = Vista.txtContrasena.Text;
-            List <Object>lstLogin = Instancia.Listar(voUser);
+            List<Object> lstLogin = Instancia.Listar(voUser);
             if ((Boolean)lstLogin[0])
             {
                 Vista_Principal vPrincipal = new Vista_Principal();
@@ -87,10 +87,10 @@ namespace DigiVot_Controlador
                 vPrincipal.Show();
                 Vista.Close();
             }
-            else {
+            else
+            {
                 MessageBox.Show("Acceso Denegado....");
             }
-
 
         }
 

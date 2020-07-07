@@ -73,6 +73,12 @@
     <Compile Include="Vista_Principal.Designer.cs">
       <DependentUpon>Vista_Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista_Principal2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista_Principal2.Designer.cs">
+      <DependentUpon>Vista_Principal2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista_Asignador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista_Principal.resx">
       <DependentUpon>Vista_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista_Principal2.resx">
+      <DependentUpon>Vista_Principal2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista_Asignador.resx">
       <DependentUpon>Vista_Asignador.cs</DependentUpon>

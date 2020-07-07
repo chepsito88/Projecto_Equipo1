@@ -34,3 +34,4 @@ C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Aplication\obj\Debug\DigiVot_Aplicati
 C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Aplication\obj\Debug\DigiVot_Aplication.csproj.CopyComplete
 C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Aplication\obj\Debug\DigiVot_Aplication.exe
 C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Aplication\obj\Debug\DigiVot_Aplication.pdb
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Aplication\bin\Debug\Guna.UI2.dll

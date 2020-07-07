@@ -24,3 +24,4 @@ C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Controlador\obj\Debug\DigiVot_Control
 C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.csproj.CopyComplete
 C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.dll
 C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.pdb
+C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Controlador\bin\Debug\Guna.UI2.dll
