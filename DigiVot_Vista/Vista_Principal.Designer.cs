@@ -66,13 +66,15 @@
             this.btnSoporteTecnico = new Guna.UI2.WinForms.Guna2Button();
             this.btnVerlaAyuda = new Guna.UI2.WinForms.Guna2Button();
             this.btnAyuda = new Guna.UI2.WinForms.Guna2Button();
-            this.lblApellidoMUser = new System.Windows.Forms.Label();
-            this.lblApellidoPUser = new System.Windows.Forms.Label();
             this.lblNomUsuario = new System.Windows.Forms.Label();
             this.btnCerrarSesion = new Guna.UI2.WinForms.Guna2Button();
             this.ptbFotoUser = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.pnlContenedorFormularios = new System.Windows.Forms.Panel();
             this.tmrColapzarAltas = new System.Windows.Forms.Timer(this.components);
+            this.tmrColapzarReportes = new System.Windows.Forms.Timer(this.components);
+            this.tmrColapzarAsignaciones = new System.Windows.Forms.Timer(this.components);
+            this.tmrColapzarConfiguraciones = new System.Windows.Forms.Timer(this.components);
+            this.tmrColapzarAyuda = new System.Windows.Forms.Timer(this.components);
             this.pnlSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalirApp)).BeginInit();
@@ -129,8 +131,6 @@
             this.pnlContMenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
             this.pnlContMenuLateral.Controls.Add(this.btnMenu);
             this.pnlContMenuLateral.Controls.Add(this.pnlContBotones);
-            this.pnlContMenuLateral.Controls.Add(this.lblApellidoMUser);
-            this.pnlContMenuLateral.Controls.Add(this.lblApellidoPUser);
             this.pnlContMenuLateral.Controls.Add(this.lblNomUsuario);
             this.pnlContMenuLateral.Controls.Add(this.btnCerrarSesion);
             this.pnlContMenuLateral.Controls.Add(this.ptbFotoUser);
@@ -805,28 +805,6 @@
             this.btnAyuda.Text = "  Ayuda";
             this.btnAyuda.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // lblApellidoMUser
-            // 
-            this.lblApellidoMUser.AutoSize = true;
-            this.lblApellidoMUser.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellidoMUser.ForeColor = System.Drawing.Color.White;
-            this.lblApellidoMUser.Location = new System.Drawing.Point(52, 194);
-            this.lblApellidoMUser.Name = "lblApellidoMUser";
-            this.lblApellidoMUser.Size = new System.Drawing.Size(80, 16);
-            this.lblApellidoMUser.TabIndex = 3;
-            this.lblApellidoMUser.Text = "Apellido M";
-            // 
-            // lblApellidoPUser
-            // 
-            this.lblApellidoPUser.AutoSize = true;
-            this.lblApellidoPUser.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellidoPUser.ForeColor = System.Drawing.Color.White;
-            this.lblApellidoPUser.Location = new System.Drawing.Point(52, 178);
-            this.lblApellidoPUser.Name = "lblApellidoPUser";
-            this.lblApellidoPUser.Size = new System.Drawing.Size(75, 16);
-            this.lblApellidoPUser.TabIndex = 2;
-            this.lblApellidoPUser.Text = "Apellido P";
-            // 
             // lblNomUsuario
             // 
             this.lblNomUsuario.AutoSize = true;
@@ -876,7 +854,7 @@
             // 
             // pnlContenedorFormularios
             // 
-            this.pnlContenedorFormularios.BackColor = System.Drawing.Color.White;
+            this.pnlContenedorFormularios.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlContenedorFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenedorFormularios.Location = new System.Drawing.Point(194, 37);
             this.pnlContenedorFormularios.Name = "pnlContenedorFormularios";
@@ -886,6 +864,22 @@
             // tmrColapzarAltas
             // 
             this.tmrColapzarAltas.Interval = 10;
+            // 
+            // tmrColapzarReportes
+            // 
+            this.tmrColapzarReportes.Interval = 10;
+            // 
+            // tmrColapzarAsignaciones
+            // 
+            this.tmrColapzarAsignaciones.Interval = 10;
+            // 
+            // tmrColapzarConfiguraciones
+            // 
+            this.tmrColapzarConfiguraciones.Interval = 10;
+            // 
+            // tmrColapzarAyuda
+            // 
+            this.tmrColapzarAyuda.Interval = 10;
             // 
             // Vista_Principal
             // 
@@ -942,8 +936,6 @@
         public Guna.UI2.WinForms.Guna2Button btnEstatal;
         public Guna.UI2.WinForms.Guna2Button btnNacional;
         public Guna.UI2.WinForms.Guna2Button btnReportes;
-        public System.Windows.Forms.Label lblApellidoMUser;
-        public System.Windows.Forms.Label lblApellidoPUser;
         public System.Windows.Forms.Label lblNomUsuario;
         public Guna.UI2.WinForms.Guna2Button btnCerrarSesion;
         public Guna.UI2.WinForms.Guna2CirclePictureBox ptbFotoUser;
@@ -961,5 +953,9 @@
         public Guna.UI2.WinForms.Guna2Button btnVerlaAyuda;
         public Guna.UI2.WinForms.Guna2Button btnAyuda;
         public System.Windows.Forms.Timer tmrColapzarAltas;
+        public System.Windows.Forms.Timer tmrColapzarReportes;
+        public System.Windows.Forms.Timer tmrColapzarAsignaciones;
+        public System.Windows.Forms.Timer tmrColapzarConfiguraciones;
+        public System.Windows.Forms.Timer tmrColapzarAyuda;
     }
 }

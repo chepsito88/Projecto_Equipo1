@@ -61,35 +61,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Vista_Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista_Login.Designer.cs">
-      <DependentUpon>Vista_Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista_Principal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista_Principal.Designer.cs">
-      <DependentUpon>Vista_Principal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista_Principal2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista_Principal2.Designer.cs">
-      <DependentUpon>Vista_Principal2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vista_Asignador.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista_Asignador.Designer.cs">
       <DependentUpon>Vista_Asignador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista_Login.Designer.cs">
+      <DependentUpon>Vista_Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista_Perfiles.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista_Perfiles.Designer.cs">
       <DependentUpon>Vista_Perfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista_Principal.Designer.cs">
+      <DependentUpon>Vista_Principal.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista_Reglas.cs">
       <SubType>Form</SubType>
@@ -109,20 +103,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista_Login.resx">
-      <DependentUpon>Vista_Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista_Principal.resx">
-      <DependentUpon>Vista_Principal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista_Principal2.resx">
-      <DependentUpon>Vista_Principal2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vista_Asignador.resx">
       <DependentUpon>Vista_Asignador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista_Login.resx">
+      <DependentUpon>Vista_Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista_Perfiles.resx">
       <DependentUpon>Vista_Perfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista_Principal.resx">
+      <DependentUpon>Vista_Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista_Reglas.resx">
       <DependentUpon>Vista_Reglas.cs</DependentUpon>

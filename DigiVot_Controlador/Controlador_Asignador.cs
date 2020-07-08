@@ -21,7 +21,6 @@ namespace DigiVot_Controlador
         public Controlador_Asignador(Vista_Asignador vAsignador)
         {
             this.vAsignador = vAsignador;
-           
             vAsignador.cmbPerfiles.ValueMember = "Id";
             vAsignador.cmbPerfiles.DisplayMember = "NombreTipo";
             vAsignador.cmbPerfiles.DataSource = InstanciaPerfiles.Listar(null);

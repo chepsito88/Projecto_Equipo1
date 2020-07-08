@@ -32,4 +32,3 @@ C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Vista\obj\Debug\DigiVot_Vista.csproj.
 C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Vista\obj\Debug\DigiVot_Vista.csproj.CopyComplete
 C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Vista\obj\Debug\DigiVot_Vista.dll
 C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Vista\obj\Debug\DigiVot_Vista.pdb
-C:\Git_Proyecto9B\Projecto_Equipo1\DigiVot_Vista\obj\Debug\DigiVot_Vista.Vista_Principal2.resources
