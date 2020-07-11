@@ -7,6 +7,7 @@ using DigiVot_Vista;
 using DigiVot_Modelo;
 using System.Data;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace DigiVot_Controlador
 {
@@ -47,7 +48,7 @@ namespace DigiVot_Controlador
         }
         private void Eventos_Botones()
         {
-            vPrincipal.btnPerfiles.Click += Peril_Click;
+            vPrincipal.btnPerfiles.Click += Perfil_Click;
             vPrincipal.btnReglas.Click += Click_Reglas;
             vPrincipal.btnAsignacion.Click += Click_Asignacion;
             vPrincipal.btnSalirApp.Click += Click_SalirApp;
@@ -137,21 +138,22 @@ namespace DigiVot_Controlador
         {
             Vista_Asignador vAsignador = new Vista_Asignador();
             Controlador_Asignador conAsignador = new Controlador_Asignador(vAsignador);
-            AbrirFormulario<Vista_Asignador>();
+            CentrarFormularios(vAsignador);
         } 
         private void Click_Reglas(object sender, EventArgs e)
         {
             Vista_Reglas visReglas = new Vista_Reglas();
             VO_Reglas voReglas = new VO_Reglas();
             Controlador_Reglas conReglas = new Controlador_Reglas(visReglas,voReglas);
-            AbrirFormulario<Vista_Reglas>();
+            CentrarFormularios(visReglas);
         }
-        private void Peril_Click(object sender, EventArgs e)
+        private void Perfil_Click(object sender, EventArgs e)
         {
             Vista_Perfiles vPerfil = new Vista_Perfiles();
             VO_Perfiles voPerfil = new VO_Perfiles();
             Controlador_Perfil cPerfil = new Controlador_Perfil(vPerfil,voPerfil);
-            AbrirFormulario<Vista_Perfiles>();
+            CentrarFormularios(vPerfil);
+                    
         }
         private void Iniciar()
         {
@@ -182,26 +184,34 @@ namespace DigiVot_Controlador
             }
             return false;
         }
-        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
-        {
-            Form formulario;
-            formulario = vPrincipal.pnlContenedorFormularios.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colexion el formulario
-            //Si el formulario/instancia no existe
-            if (formulario == null)
+
+        private void CentrarFormularios(Form vista) {
+            if (!Verificador())
             {
-                formulario = new MiForm();
-                formulario.TopLevel = false;
-                formulario.StartPosition = FormStartPosition.CenterScreen;
-                vPrincipal.pnlContenedorFormularios.Controls.Add(formulario);
-                vPrincipal.pnlContenedorFormularios.Tag = formulario;
-                formulario.Show();
-                formulario.BringToFront();
+                vista.TopLevel = false;
+                vista.Parent = vPrincipal.pnlContenedorFormularios;
+                vista.Location = new Point((vPrincipal.pnlContenedorFormularios.Width - vista.Width) / 2, (vPrincipal.pnlContenedorFormularios.Height - vista.Height) / 2);
+                vista.Show();
             }
-            //si el formulario/ Instancia existe
             else
             {
-                formulario.BringToFront();
+                MessageBox.Show("Existe una ventana abierta...");
             }
+                
         }
+
+        private bool Verificador()
+        {
+            foreach (Form frm in vPrincipal.pnlContenedorFormularios.Controls)
+            {
+                if (frm is Form)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+
     }
 }

@@ -47,7 +47,7 @@ namespace DigiVot_Modelo
             }
         }
 
-        public bool Insertar(Object VO ) {
+        public bool Insertar(Object VO) {
             Perfil = (VO_Perfiles)VO;
             try
             {

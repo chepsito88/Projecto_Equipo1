@@ -10,6 +10,7 @@ namespace DigiVot_Modelo
     {
         public bool Selected { get; set; }
         public int  id { get; set; }
+        public int idPerfil { get; set; }
         public string Regla { get; set; }
     }
 }

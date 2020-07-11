@@ -16,5 +16,10 @@ namespace DigiVot_Vista
         {
             InitializeComponent();
         }
+
+        private void Vista_Perfiles_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

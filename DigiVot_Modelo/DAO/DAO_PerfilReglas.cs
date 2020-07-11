@@ -16,6 +16,7 @@ namespace DigiVot_Modelo
         private DataTable Dtt = null;
         Modelo_Conexion cnnConexion;
         VO_Perfiles Perfil;
+        VO_PerfilReglas PerfilReglas;
 
 
         public DAO_PerfilReglas()
@@ -30,7 +31,27 @@ namespace DigiVot_Modelo
 
         public bool Insertar(object VO)
         {
-            throw new NotImplementedException();
+            PerfilReglas = (VO_PerfilReglas)VO;
+            try
+            {
+                Encabezado();
+                cmdComando.CommandText = "sp_InsertaPerfilRegla";
+                cmdComando.Parameters.AddWithValue("@idReglas", PerfilReglas.Regla);
+                cmdComando.Parameters.AddWithValue("@idPerfil", PerfilReglas.idPerfil);
+                cmdComando.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+            finally
+            {
+
+                cnnConexion.Cerrar();
+                cmdComando.Dispose();
+            }
+
         }
 
         public List<object> Listar(object VO)

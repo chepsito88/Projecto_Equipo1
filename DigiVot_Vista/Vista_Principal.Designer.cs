@@ -97,7 +97,7 @@
             this.pnlSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSuperior.Location = new System.Drawing.Point(0, 0);
             this.pnlSuperior.Name = "pnlSuperior";
-            this.pnlSuperior.Size = new System.Drawing.Size(1391, 37);
+            this.pnlSuperior.Size = new System.Drawing.Size(1386, 37);
             this.pnlSuperior.TabIndex = 1;
             // 
             // btnMinimizar
@@ -107,7 +107,7 @@
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.IconChar = FontAwesome.Sharp.IconChar.Minus;
             this.btnMinimizar.IconColor = System.Drawing.Color.White;
-            this.btnMinimizar.Location = new System.Drawing.Point(1311, 3);
+            this.btnMinimizar.Location = new System.Drawing.Point(1306, 3);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(32, 32);
             this.btnMinimizar.TabIndex = 1;
@@ -120,7 +120,7 @@
             this.btnSalirApp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalirApp.IconChar = FontAwesome.Sharp.IconChar.Times;
             this.btnSalirApp.IconColor = System.Drawing.Color.White;
-            this.btnSalirApp.Location = new System.Drawing.Point(1349, 3);
+            this.btnSalirApp.Location = new System.Drawing.Point(1344, 3);
             this.btnSalirApp.Name = "btnSalirApp";
             this.btnSalirApp.Size = new System.Drawing.Size(32, 32);
             this.btnSalirApp.TabIndex = 0;
@@ -858,7 +858,7 @@
             this.pnlContenedorFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenedorFormularios.Location = new System.Drawing.Point(194, 37);
             this.pnlContenedorFormularios.Name = "pnlContenedorFormularios";
-            this.pnlContenedorFormularios.Size = new System.Drawing.Size(1197, 1020);
+            this.pnlContenedorFormularios.Size = new System.Drawing.Size(1192, 751);
             this.pnlContenedorFormularios.TabIndex = 3;
             // 
             // tmrColapzarAltas
@@ -885,7 +885,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1391, 1057);
+            this.ClientSize = new System.Drawing.Size(1386, 788);
             this.Controls.Add(this.pnlContenedorFormularios);
             this.Controls.Add(this.pnlContMenuLateral);
             this.Controls.Add(this.pnlSuperior);

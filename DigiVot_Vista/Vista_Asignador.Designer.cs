@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grpPerfiles = new Guna.UI2.WinForms.Guna2GroupBox();
             this.cmbPerfiles = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblPerfil = new System.Windows.Forms.Label();
             this.grpReglas = new Guna.UI2.WinForms.Guna2GroupBox();
             this.dtReglas = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.chkAll = new System.Windows.Forms.CheckBox();
+            this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
             this.grpPerfiles.SuspendLayout();
             this.grpReglas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtReglas)).BeginInit();
@@ -91,23 +92,22 @@
             // 
             // grpReglas
             // 
+            this.grpReglas.Controls.Add(this.btnGuardar);
             this.grpReglas.Controls.Add(this.dtReglas);
             this.grpReglas.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
             this.grpReglas.FillColor = System.Drawing.Color.WhiteSmoke;
             this.grpReglas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpReglas.ForeColor = System.Drawing.Color.White;
-            this.grpReglas.Location = new System.Drawing.Point(30, 192);
+            this.grpReglas.Location = new System.Drawing.Point(30, 179);
             this.grpReglas.Name = "grpReglas";
             this.grpReglas.ShadowDecoration.Parent = this.grpReglas;
-            this.grpReglas.Size = new System.Drawing.Size(575, 335);
+            this.grpReglas.Size = new System.Drawing.Size(575, 348);
             this.grpReglas.TabIndex = 8;
             this.grpReglas.Text = "Listado de Reglas";
             this.grpReglas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // dtReglas
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dtReglas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dtReglas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtReglas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -115,26 +115,26 @@
             this.dtReglas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dtReglas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dtReglas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtReglas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtReglas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtReglas.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(225)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtReglas.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(225)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtReglas.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtReglas.EnableHeadersVisualStyles = false;
             this.dtReglas.GridColor = System.Drawing.Color.White;
-            this.dtReglas.Location = new System.Drawing.Point(16, 75);
+            this.dtReglas.Location = new System.Drawing.Point(17, 55);
             this.dtReglas.MultiSelect = false;
             this.dtReglas.Name = "dtReglas";
             this.dtReglas.RowHeadersVisible = false;
@@ -142,7 +142,7 @@
             this.dtReglas.Size = new System.Drawing.Size(521, 232);
             this.dtReglas.TabIndex = 9;
             this.dtReglas.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dtReglas.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtReglas.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.Empty;
             this.dtReglas.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.dtReglas.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dtReglas.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
@@ -152,7 +152,7 @@
             this.dtReglas.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
             this.dtReglas.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dtReglas.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dtReglas.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dtReglas.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
             this.dtReglas.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtReglas.ThemeStyle.HeaderStyle.Height = 30;
             this.dtReglas.ThemeStyle.ReadOnly = false;
@@ -162,7 +162,36 @@
             this.dtReglas.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White;
             this.dtReglas.ThemeStyle.RowsStyle.Height = 22;
             this.dtReglas.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtReglas.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtReglas.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
+            // chkAll
+            // 
+            this.chkAll.AutoSize = true;
+            this.chkAll.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.chkAll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
+            this.chkAll.Location = new System.Drawing.Point(30, 151);
+            this.chkAll.Name = "chkAll";
+            this.chkAll.Size = new System.Drawing.Size(161, 22);
+            this.chkAll.TabIndex = 9;
+            this.chkAll.Text = "Seleccionar todos";
+            this.chkAll.UseVisualStyleBackColor = true;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.Transparent;
+            this.btnGuardar.BorderRadius = 22;
+            this.btnGuardar.CheckedState.Parent = this.btnGuardar;
+            this.btnGuardar.CustomImages.Parent = this.btnGuardar;
+            this.btnGuardar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.HoverState.Parent = this.btnGuardar;
+            this.btnGuardar.Location = new System.Drawing.Point(30, 293);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.ShadowDecoration.Parent = this.btnGuardar;
+            this.btnGuardar.Size = new System.Drawing.Size(92, 40);
+            this.btnGuardar.TabIndex = 10;
+            this.btnGuardar.Text = "Guardar";
             // 
             // Vista_Asignador
             // 
@@ -170,6 +199,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(642, 553);
+            this.Controls.Add(this.chkAll);
             this.Controls.Add(this.grpReglas);
             this.Controls.Add(this.grpPerfiles);
             this.Name = "Vista_Asignador";
@@ -179,6 +209,7 @@
             this.grpReglas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtReglas)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -189,5 +220,7 @@
         public Guna.UI2.WinForms.Guna2ComboBox cmbPerfiles;
         public Guna.UI2.WinForms.Guna2GroupBox grpReglas;
         public Guna.UI2.WinForms.Guna2DataGridView dtReglas;
+        public System.Windows.Forms.CheckBox chkAll;
+        public Guna.UI2.WinForms.Guna2Button btnGuardar;
     }
 }

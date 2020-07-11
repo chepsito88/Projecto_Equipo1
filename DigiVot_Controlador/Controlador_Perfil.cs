@@ -14,7 +14,7 @@ namespace DigiVot_Controlador
         private Vista_Perfiles vPerfil;
         private VO_Perfiles voPerfil;
         private ICrud Instancia = Construye_Objeto.intancias(1);
-        object Clase;
+
 
         public Controlador_Perfil(Vista_Perfiles vPerfil, VO_Perfiles voPerfil)
         {
@@ -28,11 +28,16 @@ namespace DigiVot_Controlador
             llenaGrid();
             vPerfil.dtPerfiles.Columns[0].Visible = false;
             vPerfil.dtPerfiles.DataBindingComplete += Limpiar;
+            vPerfil.FormClosing += Cerrando;
             
 
         }
 
-
+        private void Cerrando(object sender, FormClosingEventArgs e)
+        {
+            //Controlador_Principal principal = new Controlador_Principal();
+            //principal.Estado = 0;
+        }
 
         private void Guardar_Click(object sender, EventArgs e)
         {
@@ -44,9 +49,8 @@ namespace DigiVot_Controlador
             else
             {
                 voPerfil.NombreTipo = vPerfil.txtPerfil.Text;
-                voPerfil.Descripcion = vPerfil.txtDescripcion.Text;
-                Clase = voPerfil;                
-                if (Instancia.Insertar(Clase))
+                voPerfil.Descripcion = vPerfil.txtDescripcion.Text;             
+                if (Instancia.Insertar(voPerfil))
                 {
                     MessageBox.Show("Almacenado correctamente....");
                     llenaGrid();
@@ -77,9 +81,7 @@ namespace DigiVot_Controlador
                 {
                     voPerfil.Id = int.Parse(vPerfil.dtPerfiles.Rows[vPerfil.dtPerfiles.CurrentRow.Index].Cells[0].Value.ToString());
                     voPerfil.Descripcion = vPerfil.txtDescripcion.Text;
-                    Clase = new object();
-                    Clase = voPerfil;
-                    if (Instancia.Modificar(Clase))
+                    if (Instancia.Modificar(voPerfil))
                     {
                         MessageBox.Show("Modificado correctamente....");
                         llenaGrid();
@@ -109,9 +111,7 @@ namespace DigiVot_Controlador
                 else
                 {
                     voPerfil.Id = int.Parse(vPerfil.dtPerfiles.Rows[vPerfil.dtPerfiles.CurrentRow.Index].Cells[0].Value.ToString());
-                    Clase = new object();
-                    Clase = voPerfil;
-                    if (Instancia.Eliminar(Clase))
+                    if (Instancia.Eliminar(voPerfil))
                     {
                         MessageBox.Show("Eliminado correctamente....");
                         llenaGrid();
