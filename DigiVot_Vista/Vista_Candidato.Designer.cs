@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grpCandidato = new Guna.UI2.WinForms.Guna2GroupBox();
             this.btnBuscar = new Guna.UI2.WinForms.Guna2Button();
             this.lblCurp = new System.Windows.Forms.Label();
@@ -40,11 +40,11 @@
             this.txtApellidoM = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblApellidoM = new System.Windows.Forms.Label();
             this.lblApellidoP = new System.Windows.Forms.Label();
-            this.txtApellido = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtApellidoP = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtNombre = new Guna.UI2.WinForms.Guna2TextBox();
             this.grpCargosCandidato = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.cmbPartidoAsign = new System.Windows.Forms.ComboBox();
+            this.ptbImagenCandidato = new Guna.UI2.WinForms.Guna2PictureBox();
             this.cmbEleccionAsign = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblEleccionAsign = new System.Windows.Forms.Label();
             this.lblPartidoAsign = new System.Windows.Forms.Label();
@@ -55,15 +55,15 @@
             this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
             this.grpListaCandidatos = new Guna.UI2.WinForms.Guna2GroupBox();
             this.dtgListaCandidatos = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.ptbImagenCandidato = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnAgregarImagen = new Guna.UI2.WinForms.Guna2Button();
+            this.cmbPartidoAsign = new Guna.UI2.WinForms.Guna2ComboBox();
             this.grpCandidato.SuspendLayout();
             this.grpDatosCandidato.SuspendLayout();
             this.grpCargosCandidato.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbImagenCandidato)).BeginInit();
             this.grpOperaciones.SuspendLayout();
             this.grpListaCandidatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgListaCandidatos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbImagenCandidato)).BeginInit();
             this.SuspendLayout();
             // 
             // grpCandidato
@@ -174,7 +174,7 @@
             this.grpDatosCandidato.Controls.Add(this.txtApellidoM);
             this.grpDatosCandidato.Controls.Add(this.lblApellidoM);
             this.grpDatosCandidato.Controls.Add(this.lblApellidoP);
-            this.grpDatosCandidato.Controls.Add(this.txtApellido);
+            this.grpDatosCandidato.Controls.Add(this.txtApellidoP);
             this.grpDatosCandidato.Controls.Add(this.lblNombre);
             this.grpDatosCandidato.Controls.Add(this.txtNombre);
             this.grpDatosCandidato.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
@@ -198,6 +198,7 @@
             this.txtApellidoM.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtApellidoM.DisabledState.Parent = this.txtApellidoM;
             this.txtApellidoM.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtApellidoM.Enabled = false;
             this.txtApellidoM.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtApellidoM.FocusedState.Parent = this.txtApellidoM;
             this.txtApellidoM.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -236,28 +237,29 @@
             this.lblApellidoP.TabIndex = 13;
             this.lblApellidoP.Text = "Apellido Paterno:";
             // 
-            // txtApellido
+            // txtApellidoP
             // 
-            this.txtApellido.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtApellido.DefaultText = "";
-            this.txtApellido.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtApellido.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtApellido.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtApellido.DisabledState.Parent = this.txtApellido;
-            this.txtApellido.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtApellido.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtApellido.FocusedState.Parent = this.txtApellido;
-            this.txtApellido.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtApellido.HoverState.Parent = this.txtApellido;
-            this.txtApellido.Location = new System.Drawing.Point(152, 111);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(6);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.PasswordChar = '\0';
-            this.txtApellido.PlaceholderText = "Apellido Paterno";
-            this.txtApellido.SelectedText = "";
-            this.txtApellido.ShadowDecoration.Parent = this.txtApellido;
-            this.txtApellido.Size = new System.Drawing.Size(150, 31);
-            this.txtApellido.TabIndex = 12;
+            this.txtApellidoP.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtApellidoP.DefaultText = "";
+            this.txtApellidoP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtApellidoP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtApellidoP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtApellidoP.DisabledState.Parent = this.txtApellidoP;
+            this.txtApellidoP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtApellidoP.Enabled = false;
+            this.txtApellidoP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtApellidoP.FocusedState.Parent = this.txtApellidoP;
+            this.txtApellidoP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtApellidoP.HoverState.Parent = this.txtApellidoP;
+            this.txtApellidoP.Location = new System.Drawing.Point(152, 111);
+            this.txtApellidoP.Margin = new System.Windows.Forms.Padding(6);
+            this.txtApellidoP.Name = "txtApellidoP";
+            this.txtApellidoP.PasswordChar = '\0';
+            this.txtApellidoP.PlaceholderText = "Apellido Paterno";
+            this.txtApellidoP.SelectedText = "";
+            this.txtApellidoP.ShadowDecoration.Parent = this.txtApellidoP;
+            this.txtApellidoP.Size = new System.Drawing.Size(150, 31);
+            this.txtApellidoP.TabIndex = 12;
             // 
             // lblNombre
             // 
@@ -280,6 +282,7 @@
             this.txtNombre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNombre.DisabledState.Parent = this.txtNombre;
             this.txtNombre.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombre.Enabled = false;
             this.txtNombre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNombre.FocusedState.Parent = this.txtNombre;
             this.txtNombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -296,8 +299,8 @@
             // 
             // grpCargosCandidato
             // 
-            this.grpCargosCandidato.Controls.Add(this.ptbImagenCandidato);
             this.grpCargosCandidato.Controls.Add(this.cmbPartidoAsign);
+            this.grpCargosCandidato.Controls.Add(this.ptbImagenCandidato);
             this.grpCargosCandidato.Controls.Add(this.cmbEleccionAsign);
             this.grpCargosCandidato.Controls.Add(this.lblEleccionAsign);
             this.grpCargosCandidato.Controls.Add(this.lblPartidoAsign);
@@ -313,15 +316,16 @@
             this.grpCargosCandidato.Text = "Asignacion de cargo al candidato";
             this.grpCargosCandidato.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // cmbPartidoAsign
+            // ptbImagenCandidato
             // 
-            this.cmbPartidoAsign.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbPartidoAsign.FormattingEnabled = true;
-            this.cmbPartidoAsign.Location = new System.Drawing.Point(84, 75);
-            this.cmbPartidoAsign.Name = "cmbPartidoAsign";
-            this.cmbPartidoAsign.Size = new System.Drawing.Size(131, 25);
-            this.cmbPartidoAsign.TabIndex = 18;
-            this.cmbPartidoAsign.Text = "Elige un Partido";
+            this.ptbImagenCandidato.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptbImagenCandidato.Location = new System.Drawing.Point(269, 59);
+            this.ptbImagenCandidato.Name = "ptbImagenCandidato";
+            this.ptbImagenCandidato.ShadowDecoration.Parent = this.ptbImagenCandidato;
+            this.ptbImagenCandidato.Size = new System.Drawing.Size(142, 107);
+            this.ptbImagenCandidato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbImagenCandidato.TabIndex = 19;
+            this.ptbImagenCandidato.TabStop = false;
             // 
             // cmbEleccionAsign
             // 
@@ -336,7 +340,7 @@
             this.cmbEleccionAsign.HoverState.Parent = this.cmbEleccionAsign;
             this.cmbEleccionAsign.ItemHeight = 30;
             this.cmbEleccionAsign.ItemsAppearance.Parent = this.cmbEleccionAsign;
-            this.cmbEleccionAsign.Location = new System.Drawing.Point(85, 124);
+            this.cmbEleccionAsign.Location = new System.Drawing.Point(85, 123);
             this.cmbEleccionAsign.Name = "cmbEleccionAsign";
             this.cmbEleccionAsign.ShadowDecoration.Parent = this.cmbEleccionAsign;
             this.cmbEleccionAsign.Size = new System.Drawing.Size(140, 36);
@@ -477,23 +481,23 @@
             this.dtgListaCandidatos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dtgListaCandidatos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dtgListaCandidatos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgListaCandidatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgListaCandidatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgListaCandidatos.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(225)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgListaCandidatos.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(225)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgListaCandidatos.DefaultCellStyle = dataGridViewCellStyle6;
             this.dtgListaCandidatos.EnableHeadersVisualStyles = false;
             this.dtgListaCandidatos.GridColor = System.Drawing.Color.White;
             this.dtgListaCandidatos.Location = new System.Drawing.Point(26, 55);
@@ -526,17 +530,6 @@
             this.dtgListaCandidatos.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgListaCandidatos.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
-            // ptbImagenCandidato
-            // 
-            this.ptbImagenCandidato.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ptbImagenCandidato.Location = new System.Drawing.Point(269, 59);
-            this.ptbImagenCandidato.Name = "ptbImagenCandidato";
-            this.ptbImagenCandidato.ShadowDecoration.Parent = this.ptbImagenCandidato;
-            this.ptbImagenCandidato.Size = new System.Drawing.Size(142, 107);
-            this.ptbImagenCandidato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbImagenCandidato.TabIndex = 19;
-            this.ptbImagenCandidato.TabStop = false;
-            // 
             // btnAgregarImagen
             // 
             this.btnAgregarImagen.BackColor = System.Drawing.Color.Transparent;
@@ -554,6 +547,25 @@
             this.btnAgregarImagen.TabIndex = 20;
             this.btnAgregarImagen.Text = "Agregar Imagen";
             this.btnAgregarImagen.UseTransparentBackground = true;
+            // 
+            // cmbPartidoAsign
+            // 
+            this.cmbPartidoAsign.BackColor = System.Drawing.Color.Transparent;
+            this.cmbPartidoAsign.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbPartidoAsign.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPartidoAsign.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbPartidoAsign.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbPartidoAsign.FocusedState.Parent = this.cmbPartidoAsign;
+            this.cmbPartidoAsign.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbPartidoAsign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbPartidoAsign.HoverState.Parent = this.cmbPartidoAsign;
+            this.cmbPartidoAsign.ItemHeight = 30;
+            this.cmbPartidoAsign.ItemsAppearance.Parent = this.cmbPartidoAsign;
+            this.cmbPartidoAsign.Location = new System.Drawing.Point(85, 70);
+            this.cmbPartidoAsign.Name = "cmbPartidoAsign";
+            this.cmbPartidoAsign.ShadowDecoration.Parent = this.cmbPartidoAsign;
+            this.cmbPartidoAsign.Size = new System.Drawing.Size(140, 36);
+            this.cmbPartidoAsign.TabIndex = 20;
             // 
             // Vista_Candidato
             // 
@@ -575,10 +587,10 @@
             this.grpDatosCandidato.PerformLayout();
             this.grpCargosCandidato.ResumeLayout(false);
             this.grpCargosCandidato.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbImagenCandidato)).EndInit();
             this.grpOperaciones.ResumeLayout(false);
             this.grpListaCandidatos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgListaCandidatos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbImagenCandidato)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -609,8 +621,8 @@
         public Guna.UI2.WinForms.Guna2PictureBox ptbImagenCandidato;
         public Guna.UI2.WinForms.Guna2TextBox txtCurp;
         public Guna.UI2.WinForms.Guna2TextBox txtApellidoM;
-        public Guna.UI2.WinForms.Guna2TextBox txtApellido;
+        public Guna.UI2.WinForms.Guna2TextBox txtApellidoP;
         public Guna.UI2.WinForms.Guna2TextBox txtNombre;
-        public System.Windows.Forms.ComboBox cmbPartidoAsign;
+        public Guna.UI2.WinForms.Guna2ComboBox cmbPartidoAsign;
     }
 }

@@ -16,6 +16,9 @@ namespace DigiVot_Modelo
                 case 3:return new DAO_PerfilReglas();
                 case 4: return new DAO_Login();
                 case 5: return new DAO_Candidato();
+                case 6: return new DAO_Partidos();
+                case 7: return new DAO_Ciudadano();
+                case 8: return new DAO_Elecciones();
                 default: return null;
             }
         }
