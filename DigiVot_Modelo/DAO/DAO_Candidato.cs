@@ -24,26 +24,25 @@ namespace DigiVot_Modelo
 
         public bool Eliminar(object VO)
         {
-            //Candidato = (VO_Candidato)VO;
-            //try
-            //{
-            //    Encabezado();
-            //    cmdComando.CommandText = "sp_EliminarCandidato";
-            //    cmdComando.Parameters.AddWithValue("@idRegla", Candidato.idCandidato);
-            //    cmdComando.ExecuteNonQuery();
-            //    return true;
-            //}
-            //catch (Exception e)
-            //{
-            //    return false;
-            //}
-            //finally
-            //{
+            Candidato = (VO_Candidato)VO;
+            try
+            {
+                Encabezado();
+                cmdComando.CommandText = "sp_Eliminar_Candidato";
+                cmdComando.Parameters.AddWithValue("@Curp", Candidato.Curp);
+                cmdComando.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+            finally
+            {
 
-            //    cnnConexion.Cerrar();
-            //    cmdComando.Dispose();
-            //}
-            throw new NotImplementedException();
+                cnnConexion.Cerrar();
+                cmdComando.Dispose();
+            }
         }
 
         public bool Insertar(object VO)
@@ -89,11 +88,13 @@ namespace DigiVot_Modelo
                     VO_Candidato candidato = new VO_Candidato();
                     candidato.Curp = Dtt.Rows[i][0].ToString();
                     candidato.Nombre = Dtt.Rows[i][1].ToString();
-                    candidato.Partido = Dtt.Rows[i][2].ToString();
-                    candidato.IdPartido = int.Parse(Dtt.Rows[i][3].ToString());
-                    candidato.Eleccion = Dtt.Rows[i][4].ToString();
-                    candidato.IdEleccion = int.Parse(Dtt.Rows[i][5].ToString());
-                    candidato.Foto = Dtt.Rows[i][6].ToString();
+                    candidato.APaterno = Dtt.Rows[i][2].ToString();
+                    candidato.AMaterno = Dtt.Rows[i][3].ToString();
+                    candidato.Partido = Dtt.Rows[i][4].ToString();
+                    candidato.IdPartido = int.Parse(Dtt.Rows[i][5].ToString());
+                    candidato.Eleccion = Dtt.Rows[i][6].ToString();
+                    candidato.IdEleccion = int.Parse(Dtt.Rows[i][7].ToString());
+                    candidato.Foto = Dtt.Rows[i][8].ToString();
                     lstElecciones.Add(candidato);
                 }
 
@@ -112,7 +113,27 @@ namespace DigiVot_Modelo
 
         public bool Modificar(object VO)
         {
-            throw new NotImplementedException();
+            Candidato = (VO_Candidato)VO;
+            try
+            {
+                Encabezado();
+                cmdComando.CommandText = "sp_Modificar_Candidato";
+                cmdComando.Parameters.AddWithValue("@Curp", Candidato.Curp);
+                cmdComando.Parameters.AddWithValue("@IdPartido", Candidato.IdPartido);
+                cmdComando.Parameters.AddWithValue("@IdEleccion", Candidato.IdEleccion);
+                cmdComando.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+            finally
+            {
+
+                cnnConexion.Cerrar();
+                cmdComando.Dispose();
+            }
         }
 
         private void Encabezado()

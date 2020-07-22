@@ -15,7 +15,7 @@ namespace DigiVot_Controlador
     {
         Vista_Candidato vCandidato;
         VO_Partidos vo_Partidos = new VO_Partidos();
-        VO_Candidato vo_Candidato;
+        VO_Candidato vo_Candidato=new VO_Candidato();
         private ICrud InstanciaPartidos = Construye_Objeto.intancias(6);
         private ICrud InstanciaCandidatos = Construye_Objeto.intancias(5);
         private ICrud InstanciaCiudadanos = Construye_Objeto.intancias(7);
@@ -36,6 +36,83 @@ namespace DigiVot_Controlador
             vCandidato.btnBuscar.Click += Click_Buscar;
             vCandidato.btnGuardar.Click += Click_Guardar;
             vCandidato.btnLimpiar.Click += Click_Limpiar;
+            vCandidato.btnEliminar.Click += Click_Eliminar;
+            vCandidato.btnEditar.Click += Click_Modificar;
+            vCandidato.dtgListaCandidatos.CellDoubleClick += Click_Doble;
+        }
+
+        private void Click_Doble(object sender, DataGridViewCellEventArgs e)
+        {
+            vCandidato.txtCurp.Text = vCandidato.dtgListaCandidatos.Rows[vCandidato.dtgListaCandidatos.CurrentRow.Index].Cells[0].Value.ToString();
+            vCandidato.txtNombre.Text = vCandidato.dtgListaCandidatos.Rows[vCandidato.dtgListaCandidatos.CurrentRow.Index].Cells[1].Value.ToString();
+            vCandidato.txtApellidoP.Text = vCandidato.dtgListaCandidatos.Rows[vCandidato.dtgListaCandidatos.CurrentRow.Index].Cells[2].Value.ToString();
+            vCandidato.txtApellidoM.Text = vCandidato.dtgListaCandidatos.Rows[vCandidato.dtgListaCandidatos.CurrentRow.Index].Cells[3].Value.ToString();
+            vCandidato.cmbPartidoAsign.SelectedValue = int.Parse(vCandidato.dtgListaCandidatos.Rows[vCandidato.dtgListaCandidatos.CurrentRow.Index].Cells[5].Value.ToString());
+            vCandidato.cmbEleccionAsign.SelectedValue = int.Parse(vCandidato.dtgListaCandidatos.Rows[vCandidato.dtgListaCandidatos.CurrentRow.Index].Cells[7].Value.ToString());
+            //vCandidato.ptbImagenCandidato.Image= Image.FromFile(vCandidato.dtgListaCandidatos.Rows[vCandidato.dtgListaCandidatos.CurrentRow.Index].Cells[8].Value.ToString());
+        }
+
+        private void Click_Modificar(object sender, EventArgs e)
+        {
+            int num = vCandidato.dtgListaCandidatos.RowCount;
+            if (num == 0)
+            {
+                MessageBox.Show("Imposible modificar!!! tabla sin datos.......");
+            }
+            else
+            {
+                if (vCandidato.dtgListaCandidatos.CurrentRow.Selected == false)
+                {
+                    MessageBox.Show("Seleccione Registro", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    vo_Candidato.Curp = vCandidato.dtgListaCandidatos.Rows[vCandidato.dtgListaCandidatos.CurrentRow.Index].Cells[0].Value.ToString();
+                    vo_Candidato.IdPartido = Convert.ToInt32(vCandidato.cmbPartidoAsign.SelectedValue);
+                    vo_Candidato.IdEleccion = Convert.ToInt32(vCandidato.cmbEleccionAsign.SelectedValue);
+                    vo_Candidato.Foto = NombreFoto;
+                    if (InstanciaCandidatos.Modificar(vo_Candidato))
+                    {
+                        MessageBox.Show("Modificado correctamente....");
+                        llenaGrid();
+                        refrescar();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Intente nuevamente....");
+                    }
+                }
+            }
+        }
+
+        private void Click_Eliminar(object sender, EventArgs e)
+        {
+            int num = vCandidato.dtgListaCandidatos.RowCount;
+            if (num == 0)
+            {
+                MessageBox.Show("Imposible eliminar!!! tabla sin datos.......");
+            }
+            else
+            {
+                if (vCandidato.dtgListaCandidatos.CurrentRow.Selected == false)
+                {
+                    MessageBox.Show("Seleccione Registro", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    vo_Candidato.Curp = vCandidato.dtgListaCandidatos.Rows[vCandidato.dtgListaCandidatos.CurrentRow.Index].Cells[0].Value.ToString();
+                    if (InstanciaCandidatos.Eliminar(vo_Candidato))
+                    {
+                        MessageBox.Show("Eliminado correctamente....");
+                        llenaGrid();
+                        refrescar();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Intente nuevamente....");
+                    }
+                }
+            }
         }
 
         private void Click_Limpiar(object sender, EventArgs e)
@@ -70,7 +147,7 @@ namespace DigiVot_Controlador
 
         private void Click_Guardar(object sender, EventArgs e)
         {
-            if (vCandidato.txtCurp.Text == "" && NombreFoto=="")
+            if (vCandidato.txtCurp.Text == "" || NombreFoto=="")
             {
                 MessageBox.Show("Campos requeridos obligatoriamente", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
@@ -95,21 +172,13 @@ namespace DigiVot_Controlador
 
         private void Click_AgregarImagen(object sender, EventArgs e)
         {
-            string URLImagen;
             OpenFileDialog abrir = new OpenFileDialog();
             abrir.Title = "Selecione el achivo adecuado";
             abrir.Filter = "Archivos (*.jpg; *.jpeg; *.png)|*.jpg; *.jpeg; *.png";
             if (abrir.ShowDialog() == DialogResult.OK)
             {
-                URLImagen = abrir.SafeFileName;
-                NombreFoto = abrir.FileName;
-                //lblImagen.Text = abrir.SafeFileName;
+                NombreFoto =abrir.FileName.Substring(abrir.FileName.LastIndexOf("\\") + 1);
                 vCandidato.ptbImagenCandidato.Image = Image.FromFile(abrir.FileName);
-            }
-            else
-            {
-                abrir.Dispose();
-                MessageBox.Show("No selecionó ningun archivo");
             }
         }
 
@@ -137,6 +206,7 @@ namespace DigiVot_Controlador
             vCandidato.txtApellidoM.Clear();
             vCandidato.dtgListaCandidatos.ClearSelection();
             NombreFoto = "";
+            vCandidato.ptbImagenCandidato.Image = null;
         }
     }
 }

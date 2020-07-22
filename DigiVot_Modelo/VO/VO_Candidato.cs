@@ -10,6 +10,8 @@ namespace DigiVot_Modelo
     {
         public string Curp { get; set; }
         public string Nombre { get; set; }
+        public string APaterno { get; set; }
+        public string AMaterno { get; set; }
         public string Partido { get; set; }
         public int IdPartido { get; set; }
         public string Eleccion { get; set; }
