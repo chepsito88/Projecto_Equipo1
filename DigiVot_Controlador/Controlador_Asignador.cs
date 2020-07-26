@@ -15,8 +15,7 @@ namespace DigiVot_Controlador
         private VO_Perfiles voPerfil = new VO_Perfiles();
         private VO_PerfilReglas voPerfilReglas;
         private ICrud InstanciaPerfiles = Construye_Objeto.intancias(1);
-        private ICrud Instancia = Construye_Objeto.intancias(3);
-        object Clase;
+        private ICrud Instancia = Construye_Objeto.intancias(3);        
 
         public Controlador_Asignador(Vista_Asignador vAsignador)
         {

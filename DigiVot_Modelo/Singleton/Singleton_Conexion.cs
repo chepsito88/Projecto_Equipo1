@@ -17,7 +17,8 @@ namespace DigiVot_Modelo
         {
             lock (Padlock)
             {
-                Conexion = new SqlConnection(@"Data Source=Gabino; database=Bd_Elecciones;User Id=sa; Password=GabinoHH");//modificar
+                //Conexion = new SqlConnection(@"Data Source=Gabino; database=Bd_Elecciones;User Id=sa; Password=GabinoHH");//modifica
+                Conexion = new SqlConnection(@"Data Source=DESKTOP-GL2L3IJ; database=Bd_Elecciones;User Id=sa; Password=chepsito");
             }
         }
 

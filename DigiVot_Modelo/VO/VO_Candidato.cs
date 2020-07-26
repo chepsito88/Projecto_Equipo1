@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DigiVot_Modelo
 {
@@ -16,6 +18,7 @@ namespace DigiVot_Modelo
         public int IdPartido { get; set; }
         public string Eleccion { get; set; }
         public int IdEleccion { get; set; }
-        public string Foto { get; set; }
+        public byte[] datos { get; set; }
+        public PictureBox picture { get; set; }
     }
 }

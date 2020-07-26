@@ -27,16 +27,8 @@ namespace DigiVot_Controlador
             vPerfil.btnLimpiar.Click += Limpiar_Click;
             llenaGrid();
             vPerfil.dtPerfiles.Columns[0].Visible = false;
-            vPerfil.dtPerfiles.DataBindingComplete += Limpiar;
-            vPerfil.FormClosing += Cerrando;
-            
+            vPerfil.dtPerfiles.DataBindingComplete += Limpiar;            
 
-        }
-
-        private void Cerrando(object sender, FormClosingEventArgs e)
-        {
-            //Controlador_Principal principal = new Controlador_Principal();
-            //principal.Estado = 0;
         }
 
         private void Guardar_Click(object sender, EventArgs e)

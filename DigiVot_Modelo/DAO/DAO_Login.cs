@@ -61,8 +61,9 @@ namespace DigiVot_Modelo
                 }
                 return lstUser;
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
+                System.Windows.Forms.MessageBox.Show("Error: " + e);
                 return null;
             }
             finally

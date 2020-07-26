@@ -55,12 +55,16 @@
     <Compile Include="Controlador_Asignador.cs" />
     <Compile Include="Controlador_Candidato.cs" />
     <Compile Include="Controlador_Ciudadano.cs" />
+    <Compile Include="Controlador_Elecciones.cs" />
+    <Compile Include="Controlador_Funcionarios.cs" />
     <Compile Include="Controlador_Login.cs" />
+    <Compile Include="Controlador_Partidos.cs" />
     <Compile Include="Controlador_Perfil.cs" />
     <Compile Include="Controlador_Principal.cs" />
     <Compile Include="Controlador_Reglas.cs" />
     <Compile Include="Controlador_Splash.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\Validaciones.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DigiVot_Modelo\DigiVot_Modelo.csproj">
@@ -72,5 +76,6 @@
       <Name>DigiVot_Vista</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

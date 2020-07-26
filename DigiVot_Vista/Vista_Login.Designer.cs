@@ -102,7 +102,7 @@
             this.txtUsuario.ForeColor = System.Drawing.Color.White;
             this.txtUsuario.Location = new System.Drawing.Point(349, 88);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.PlaceholderText = "Usuario";
+            this.txtUsuario.PlaceholderText = "chepsito";
             this.txtUsuario.Size = new System.Drawing.Size(395, 31);
             this.txtUsuario.TabIndex = 21;
             // 
@@ -113,7 +113,7 @@
             this.txtContrasena.ForeColor = System.Drawing.Color.White;
             this.txtContrasena.Location = new System.Drawing.Point(349, 163);
             this.txtContrasena.Name = "txtContrasena";
-            this.txtContrasena.PlaceholderText = "-------";
+            this.txtContrasena.PlaceholderText = "1988";
             this.txtContrasena.Size = new System.Drawing.Size(395, 31);
             this.txtContrasena.TabIndex = 22;
             this.txtContrasena.UseSystemPasswordChar = true;
@@ -168,7 +168,7 @@
             this.pktCerrar.TabIndex = 24;
             this.pktCerrar.TabStop = false;
             // 
-            // View_Login
+            // Vista_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -183,7 +183,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "View_Login";
+            this.Name = "Vista_Login";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acceso";

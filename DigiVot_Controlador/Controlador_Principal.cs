@@ -61,6 +61,33 @@ namespace DigiVot_Controlador
             vPrincipal.btnMenu.Click += Click_Menu;
             vPrincipal.btnCandidatos.Click += Click_Candidatos;
             vPrincipal.btnCiudadanos.Click += CLick_Ciudadano;
+            vPrincipal.btnPartidos.Click += Click_Partidos;
+            vPrincipal.btnElecciones.Click += Click_Elecciones;
+            vPrincipal.btnFuncionarios.Click += Click_Funcionarios;
+        }
+
+        private void Click_Funcionarios(object sender, EventArgs e)
+        {
+            Vista_Funcionarios vista_Funcionarios = new Vista_Funcionarios();
+            VO_Funcionarios vo_Funcionarios = new VO_Funcionarios();
+            Controlador_Funcionarios con_Funcionarios = new Controlador_Funcionarios(vista_Funcionarios, vo_Funcionarios);
+            CentrarFormularios(vista_Funcionarios);
+        }
+
+        private void Click_Elecciones(object sender, EventArgs e)
+        {
+            Vista_Tipo_Elecciones vista_Elecciones = new Vista_Tipo_Elecciones();
+            VO_Tipo_Eleccion vo_Elecciones = new VO_Tipo_Eleccion();
+            Controlador_Elecciones con_Elecciones = new Controlador_Elecciones(vista_Elecciones,vo_Elecciones);
+            CentrarFormularios(vista_Elecciones);
+        }
+
+        private void Click_Partidos(object sender, EventArgs e)
+        {
+            Vista_Partidos vista_Partidos = new Vista_Partidos();
+            VO_Partidos vo_Partidos = new VO_Partidos();
+            Controlador_Partidos con_Partidos = new Controlador_Partidos(vista_Partidos,vo_Partidos);
+            CentrarFormularios(vista_Partidos);
         }
 
         private void CLick_Ciudadano(object sender, EventArgs e)
@@ -73,7 +100,10 @@ namespace DigiVot_Controlador
         private void Click_Candidatos(object sender, EventArgs e)
         {
             Vista_Candidato vCandidato = new Vista_Candidato();
-            Controlador_Candidato conCandidato = new Controlador_Candidato(vCandidato);
+            VO_Candidato vo_Candidato = new VO_Candidato();
+            VO_Partidos vo_Partidos = new VO_Partidos();
+            VO_Ciudadano vo_Ciudadano = new VO_Ciudadano();
+            Controlador_Candidato conCandidato = new Controlador_Candidato(vCandidato,vo_Candidato,vo_Partidos,vo_Ciudadano);
             CentrarFormularios(vCandidato);
         }
 

@@ -37,6 +37,7 @@ namespace DigiVot_Modelo
             }
             catch (Exception e)
             {
+                System.Windows.Forms.MessageBox.Show("Error: " + e);
                 return false;
             }
             finally
@@ -59,6 +60,7 @@ namespace DigiVot_Modelo
                 return true;
             }
             catch (Exception e) {
+                System.Windows.Forms.MessageBox.Show("Error: " + e);
                 return false;
             }
             finally {
@@ -82,6 +84,7 @@ namespace DigiVot_Modelo
             }
             catch (Exception e)
             {
+                System.Windows.Forms.MessageBox.Show("Error: " + e);
                 return false;
             }
             finally
@@ -115,8 +118,9 @@ namespace DigiVot_Modelo
                
                 return lstPerfiles;
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
+                System.Windows.Forms.MessageBox.Show("Error: " + e);
                 return null;
             }
             finally

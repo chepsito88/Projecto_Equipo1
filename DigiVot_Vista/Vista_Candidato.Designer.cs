@@ -28,23 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grpCandidato = new Guna.UI2.WinForms.Guna2GroupBox();
             this.btnBuscar = new Guna.UI2.WinForms.Guna2Button();
             this.lblCurp = new System.Windows.Forms.Label();
             this.txtCurp = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cmbPartidos = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.lblPartido = new System.Windows.Forms.Label();
             this.grpDatosCandidato = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.btnAgregarImagen = new Guna.UI2.WinForms.Guna2Button();
             this.txtApellidoM = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ptbImagenCandidato = new System.Windows.Forms.PictureBox();
             this.lblApellidoM = new System.Windows.Forms.Label();
             this.lblApellidoP = new System.Windows.Forms.Label();
             this.txtApellidoP = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtNombre = new Guna.UI2.WinForms.Guna2TextBox();
             this.grpCargosCandidato = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.ptbImagenCandidato = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.cmbPartidoAsign = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbEleccionAsign = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblEleccionAsign = new System.Windows.Forms.Label();
             this.lblPartidoAsign = new System.Windows.Forms.Label();
@@ -55,12 +56,10 @@
             this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
             this.grpListaCandidatos = new Guna.UI2.WinForms.Guna2GroupBox();
             this.dtgListaCandidatos = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.btnAgregarImagen = new Guna.UI2.WinForms.Guna2Button();
-            this.cmbPartidoAsign = new Guna.UI2.WinForms.Guna2ComboBox();
             this.grpCandidato.SuspendLayout();
             this.grpDatosCandidato.SuspendLayout();
-            this.grpCargosCandidato.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagenCandidato)).BeginInit();
+            this.grpCargosCandidato.SuspendLayout();
             this.grpOperaciones.SuspendLayout();
             this.grpListaCandidatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgListaCandidatos)).BeginInit();
@@ -71,18 +70,16 @@
             this.grpCandidato.Controls.Add(this.btnBuscar);
             this.grpCandidato.Controls.Add(this.lblCurp);
             this.grpCandidato.Controls.Add(this.txtCurp);
-            this.grpCandidato.Controls.Add(this.cmbPartidos);
-            this.grpCandidato.Controls.Add(this.lblPartido);
             this.grpCandidato.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
-            this.grpCandidato.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.grpCandidato.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(225)))), ((int)(((byte)(255)))));
             this.grpCandidato.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpCandidato.ForeColor = System.Drawing.Color.White;
-            this.grpCandidato.Location = new System.Drawing.Point(24, 24);
+            this.grpCandidato.Location = new System.Drawing.Point(26, 24);
             this.grpCandidato.Name = "grpCandidato";
             this.grpCandidato.ShadowDecoration.Parent = this.grpCandidato;
             this.grpCandidato.Size = new System.Drawing.Size(286, 239);
             this.grpCandidato.TabIndex = 8;
-            this.grpCandidato.Text = "Ingrese los datos requeridos";
+            this.grpCandidato.Text = "Busqueda Informacion";
             this.grpCandidato.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnBuscar
@@ -95,7 +92,7 @@
             this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.HoverState.Parent = this.btnBuscar;
-            this.btnBuscar.Location = new System.Drawing.Point(102, 173);
+            this.btnBuscar.Location = new System.Drawing.Point(102, 139);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.ShadowDecoration.Parent = this.btnBuscar;
             this.btnBuscar.Size = new System.Drawing.Size(92, 40);
@@ -108,7 +105,7 @@
             this.lblCurp.BackColor = System.Drawing.Color.Transparent;
             this.lblCurp.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCurp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
-            this.lblCurp.Location = new System.Drawing.Point(21, 130);
+            this.lblCurp.Location = new System.Drawing.Point(21, 96);
             this.lblCurp.Name = "lblCurp";
             this.lblCurp.Size = new System.Drawing.Size(48, 18);
             this.lblCurp.TabIndex = 4;
@@ -127,67 +124,55 @@
             this.txtCurp.FocusedState.Parent = this.txtCurp;
             this.txtCurp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCurp.HoverState.Parent = this.txtCurp;
-            this.txtCurp.Location = new System.Drawing.Point(73, 130);
+            this.txtCurp.Location = new System.Drawing.Point(73, 96);
             this.txtCurp.Margin = new System.Windows.Forms.Padding(4);
             this.txtCurp.Name = "txtCurp";
             this.txtCurp.PasswordChar = '\0';
-            this.txtCurp.PlaceholderText = "Ingrese la Curp";
+            this.txtCurp.PlaceholderText = "Ingrese el Curp";
             this.txtCurp.SelectedText = "";
             this.txtCurp.ShadowDecoration.Parent = this.txtCurp;
             this.txtCurp.Size = new System.Drawing.Size(195, 28);
             this.txtCurp.TabIndex = 3;
             // 
-            // cmbPartidos
-            // 
-            this.cmbPartidos.BackColor = System.Drawing.Color.Transparent;
-            this.cmbPartidos.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbPartidos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPartidos.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbPartidos.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbPartidos.FocusedState.Parent = this.cmbPartidos;
-            this.cmbPartidos.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbPartidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbPartidos.HoverState.Parent = this.cmbPartidos;
-            this.cmbPartidos.ItemHeight = 30;
-            this.cmbPartidos.ItemsAppearance.Parent = this.cmbPartidos;
-            this.cmbPartidos.Location = new System.Drawing.Point(75, 66);
-            this.cmbPartidos.Name = "cmbPartidos";
-            this.cmbPartidos.ShadowDecoration.Parent = this.cmbPartidos;
-            this.cmbPartidos.Size = new System.Drawing.Size(193, 36);
-            this.cmbPartidos.TabIndex = 2;
-            this.cmbPartidos.Tag = "";
-            // 
-            // lblPartido
-            // 
-            this.lblPartido.AutoSize = true;
-            this.lblPartido.BackColor = System.Drawing.Color.Transparent;
-            this.lblPartido.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPartido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
-            this.lblPartido.Location = new System.Drawing.Point(8, 69);
-            this.lblPartido.Name = "lblPartido";
-            this.lblPartido.Size = new System.Drawing.Size(67, 18);
-            this.lblPartido.TabIndex = 0;
-            this.lblPartido.Text = "Partido: ";
-            // 
             // grpDatosCandidato
             // 
+            this.grpDatosCandidato.Controls.Add(this.btnAgregarImagen);
             this.grpDatosCandidato.Controls.Add(this.txtApellidoM);
+            this.grpDatosCandidato.Controls.Add(this.ptbImagenCandidato);
             this.grpDatosCandidato.Controls.Add(this.lblApellidoM);
             this.grpDatosCandidato.Controls.Add(this.lblApellidoP);
             this.grpDatosCandidato.Controls.Add(this.txtApellidoP);
             this.grpDatosCandidato.Controls.Add(this.lblNombre);
             this.grpDatosCandidato.Controls.Add(this.txtNombre);
             this.grpDatosCandidato.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
-            this.grpDatosCandidato.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.grpDatosCandidato.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(225)))), ((int)(((byte)(255)))));
             this.grpDatosCandidato.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDatosCandidato.ForeColor = System.Drawing.Color.White;
-            this.grpDatosCandidato.Location = new System.Drawing.Point(339, 23);
+            this.grpDatosCandidato.Location = new System.Drawing.Point(318, 23);
             this.grpDatosCandidato.Name = "grpDatosCandidato";
             this.grpDatosCandidato.ShadowDecoration.Parent = this.grpDatosCandidato;
-            this.grpDatosCandidato.Size = new System.Drawing.Size(324, 240);
+            this.grpDatosCandidato.Size = new System.Drawing.Size(551, 240);
             this.grpDatosCandidato.TabIndex = 13;
             this.grpDatosCandidato.Text = "Datos del Candidato";
             this.grpDatosCandidato.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnAgregarImagen
+            // 
+            this.btnAgregarImagen.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregarImagen.BorderRadius = 22;
+            this.btnAgregarImagen.CheckedState.Parent = this.btnAgregarImagen;
+            this.btnAgregarImagen.CustomImages.Parent = this.btnAgregarImagen;
+            this.btnAgregarImagen.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.btnAgregarImagen.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarImagen.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarImagen.HoverState.Parent = this.btnAgregarImagen;
+            this.btnAgregarImagen.Location = new System.Drawing.Point(344, 185);
+            this.btnAgregarImagen.Name = "btnAgregarImagen";
+            this.btnAgregarImagen.ShadowDecoration.Parent = this.btnAgregarImagen;
+            this.btnAgregarImagen.Size = new System.Drawing.Size(164, 40);
+            this.btnAgregarImagen.TabIndex = 22;
+            this.btnAgregarImagen.Text = "Agregar Imagen";
+            this.btnAgregarImagen.UseTransparentBackground = true;
             // 
             // txtApellidoM
             // 
@@ -203,7 +188,7 @@
             this.txtApellidoM.FocusedState.Parent = this.txtApellidoM;
             this.txtApellidoM.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtApellidoM.HoverState.Parent = this.txtApellidoM;
-            this.txtApellidoM.Location = new System.Drawing.Point(152, 158);
+            this.txtApellidoM.Location = new System.Drawing.Point(147, 158);
             this.txtApellidoM.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellidoM.Name = "txtApellidoM";
             this.txtApellidoM.PasswordChar = '\0';
@@ -213,13 +198,22 @@
             this.txtApellidoM.Size = new System.Drawing.Size(150, 29);
             this.txtApellidoM.TabIndex = 15;
             // 
+            // ptbImagenCandidato
+            // 
+            this.ptbImagenCandidato.Location = new System.Drawing.Point(355, 66);
+            this.ptbImagenCandidato.Name = "ptbImagenCandidato";
+            this.ptbImagenCandidato.Size = new System.Drawing.Size(142, 107);
+            this.ptbImagenCandidato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbImagenCandidato.TabIndex = 23;
+            this.ptbImagenCandidato.TabStop = false;
+            // 
             // lblApellidoM
             // 
             this.lblApellidoM.AutoSize = true;
             this.lblApellidoM.BackColor = System.Drawing.Color.Transparent;
             this.lblApellidoM.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellidoM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
-            this.lblApellidoM.Location = new System.Drawing.Point(7, 167);
+            this.lblApellidoM.Location = new System.Drawing.Point(2, 167);
             this.lblApellidoM.Name = "lblApellidoM";
             this.lblApellidoM.Size = new System.Drawing.Size(141, 18);
             this.lblApellidoM.TabIndex = 14;
@@ -231,7 +225,7 @@
             this.lblApellidoP.BackColor = System.Drawing.Color.Transparent;
             this.lblApellidoP.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellidoP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
-            this.lblApellidoP.Location = new System.Drawing.Point(10, 117);
+            this.lblApellidoP.Location = new System.Drawing.Point(5, 117);
             this.lblApellidoP.Name = "lblApellidoP";
             this.lblApellidoP.Size = new System.Drawing.Size(135, 18);
             this.lblApellidoP.TabIndex = 13;
@@ -251,7 +245,7 @@
             this.txtApellidoP.FocusedState.Parent = this.txtApellidoP;
             this.txtApellidoP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtApellidoP.HoverState.Parent = this.txtApellidoP;
-            this.txtApellidoP.Location = new System.Drawing.Point(152, 111);
+            this.txtApellidoP.Location = new System.Drawing.Point(147, 111);
             this.txtApellidoP.Margin = new System.Windows.Forms.Padding(6);
             this.txtApellidoP.Name = "txtApellidoP";
             this.txtApellidoP.PasswordChar = '\0';
@@ -267,7 +261,7 @@
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
-            this.lblNombre.Location = new System.Drawing.Point(70, 70);
+            this.lblNombre.Location = new System.Drawing.Point(65, 70);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(72, 18);
             this.lblNombre.TabIndex = 4;
@@ -287,7 +281,7 @@
             this.txtNombre.FocusedState.Parent = this.txtNombre;
             this.txtNombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNombre.HoverState.Parent = this.txtNombre;
-            this.txtNombre.Location = new System.Drawing.Point(150, 66);
+            this.txtNombre.Location = new System.Drawing.Point(146, 66);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(6);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.PasswordChar = '\0';
@@ -300,32 +294,39 @@
             // grpCargosCandidato
             // 
             this.grpCargosCandidato.Controls.Add(this.cmbPartidoAsign);
-            this.grpCargosCandidato.Controls.Add(this.ptbImagenCandidato);
             this.grpCargosCandidato.Controls.Add(this.cmbEleccionAsign);
             this.grpCargosCandidato.Controls.Add(this.lblEleccionAsign);
             this.grpCargosCandidato.Controls.Add(this.lblPartidoAsign);
             this.grpCargosCandidato.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
-            this.grpCargosCandidato.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.grpCargosCandidato.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(225)))), ((int)(((byte)(255)))));
             this.grpCargosCandidato.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpCargosCandidato.ForeColor = System.Drawing.Color.White;
-            this.grpCargosCandidato.Location = new System.Drawing.Point(689, 23);
+            this.grpCargosCandidato.Location = new System.Drawing.Point(875, 23);
             this.grpCargosCandidato.Name = "grpCargosCandidato";
             this.grpCargosCandidato.ShadowDecoration.Parent = this.grpCargosCandidato;
-            this.grpCargosCandidato.Size = new System.Drawing.Size(438, 237);
+            this.grpCargosCandidato.Size = new System.Drawing.Size(252, 237);
             this.grpCargosCandidato.TabIndex = 17;
-            this.grpCargosCandidato.Text = "Asignacion de cargo al candidato";
+            this.grpCargosCandidato.Text = "Asignación Candidato";
             this.grpCargosCandidato.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // ptbImagenCandidato
+            // cmbPartidoAsign
             // 
-            this.ptbImagenCandidato.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ptbImagenCandidato.Location = new System.Drawing.Point(269, 59);
-            this.ptbImagenCandidato.Name = "ptbImagenCandidato";
-            this.ptbImagenCandidato.ShadowDecoration.Parent = this.ptbImagenCandidato;
-            this.ptbImagenCandidato.Size = new System.Drawing.Size(142, 107);
-            this.ptbImagenCandidato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbImagenCandidato.TabIndex = 19;
-            this.ptbImagenCandidato.TabStop = false;
+            this.cmbPartidoAsign.BackColor = System.Drawing.Color.Transparent;
+            this.cmbPartidoAsign.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbPartidoAsign.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPartidoAsign.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbPartidoAsign.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbPartidoAsign.FocusedState.Parent = this.cmbPartidoAsign;
+            this.cmbPartidoAsign.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbPartidoAsign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbPartidoAsign.HoverState.Parent = this.cmbPartidoAsign;
+            this.cmbPartidoAsign.ItemHeight = 30;
+            this.cmbPartidoAsign.ItemsAppearance.Parent = this.cmbPartidoAsign;
+            this.cmbPartidoAsign.Location = new System.Drawing.Point(85, 70);
+            this.cmbPartidoAsign.Name = "cmbPartidoAsign";
+            this.cmbPartidoAsign.ShadowDecoration.Parent = this.cmbPartidoAsign;
+            this.cmbPartidoAsign.Size = new System.Drawing.Size(140, 36);
+            this.cmbPartidoAsign.TabIndex = 20;
             // 
             // cmbEleccionAsign
             // 
@@ -378,7 +379,7 @@
             this.grpOperaciones.Controls.Add(this.btnEditar);
             this.grpOperaciones.Controls.Add(this.btnGuardar);
             this.grpOperaciones.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
-            this.grpOperaciones.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.grpOperaciones.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(225)))), ((int)(((byte)(255)))));
             this.grpOperaciones.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpOperaciones.ForeColor = System.Drawing.Color.White;
             this.grpOperaciones.Location = new System.Drawing.Point(26, 298);
@@ -461,7 +462,7 @@
             // 
             this.grpListaCandidatos.Controls.Add(this.dtgListaCandidatos);
             this.grpListaCandidatos.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
-            this.grpListaCandidatos.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.grpListaCandidatos.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(225)))), ((int)(((byte)(255)))));
             this.grpListaCandidatos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpListaCandidatos.ForeColor = System.Drawing.Color.White;
             this.grpListaCandidatos.Location = new System.Drawing.Point(254, 300);
@@ -474,30 +475,30 @@
             // 
             // dtgListaCandidatos
             // 
-            this.dtgListaCandidatos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dtgListaCandidatos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dtgListaCandidatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgListaCandidatos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.dtgListaCandidatos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dtgListaCandidatos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dtgListaCandidatos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgListaCandidatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgListaCandidatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dtgListaCandidatos.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(225)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgListaCandidatos.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(225)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgListaCandidatos.DefaultCellStyle = dataGridViewCellStyle9;
             this.dtgListaCandidatos.EnableHeadersVisualStyles = false;
             this.dtgListaCandidatos.GridColor = System.Drawing.Color.White;
             this.dtgListaCandidatos.Location = new System.Drawing.Point(26, 55);
@@ -506,9 +507,9 @@
             this.dtgListaCandidatos.RowHeadersVisible = false;
             this.dtgListaCandidatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgListaCandidatos.Size = new System.Drawing.Size(819, 232);
-            this.dtgListaCandidatos.TabIndex = 9;
+            this.dtgListaCandidatos.TabIndex = 12;
             this.dtgListaCandidatos.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dtgListaCandidatos.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.Empty;
+            this.dtgListaCandidatos.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgListaCandidatos.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.dtgListaCandidatos.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dtgListaCandidatos.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
@@ -517,55 +518,18 @@
             this.dtgListaCandidatos.ThemeStyle.GridColor = System.Drawing.Color.White;
             this.dtgListaCandidatos.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(89)))), ((int)(((byte)(255)))));
             this.dtgListaCandidatos.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dtgListaCandidatos.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgListaCandidatos.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
+            this.dtgListaCandidatos.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgListaCandidatos.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dtgListaCandidatos.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgListaCandidatos.ThemeStyle.HeaderStyle.Height = 30;
             this.dtgListaCandidatos.ThemeStyle.ReadOnly = false;
             this.dtgListaCandidatos.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(225)))), ((int)(((byte)(255)))));
             this.dtgListaCandidatos.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            this.dtgListaCandidatos.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgListaCandidatos.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White;
+            this.dtgListaCandidatos.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgListaCandidatos.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgListaCandidatos.ThemeStyle.RowsStyle.Height = 22;
             this.dtgListaCandidatos.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgListaCandidatos.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            // 
-            // btnAgregarImagen
-            // 
-            this.btnAgregarImagen.BackColor = System.Drawing.Color.Transparent;
-            this.btnAgregarImagen.BorderRadius = 22;
-            this.btnAgregarImagen.CheckedState.Parent = this.btnAgregarImagen;
-            this.btnAgregarImagen.CustomImages.Parent = this.btnAgregarImagen;
-            this.btnAgregarImagen.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
-            this.btnAgregarImagen.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarImagen.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarImagen.HoverState.Parent = this.btnAgregarImagen;
-            this.btnAgregarImagen.Location = new System.Drawing.Point(951, 201);
-            this.btnAgregarImagen.Name = "btnAgregarImagen";
-            this.btnAgregarImagen.ShadowDecoration.Parent = this.btnAgregarImagen;
-            this.btnAgregarImagen.Size = new System.Drawing.Size(164, 40);
-            this.btnAgregarImagen.TabIndex = 20;
-            this.btnAgregarImagen.Text = "Agregar Imagen";
-            this.btnAgregarImagen.UseTransparentBackground = true;
-            // 
-            // cmbPartidoAsign
-            // 
-            this.cmbPartidoAsign.BackColor = System.Drawing.Color.Transparent;
-            this.cmbPartidoAsign.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbPartidoAsign.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPartidoAsign.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbPartidoAsign.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbPartidoAsign.FocusedState.Parent = this.cmbPartidoAsign;
-            this.cmbPartidoAsign.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbPartidoAsign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbPartidoAsign.HoverState.Parent = this.cmbPartidoAsign;
-            this.cmbPartidoAsign.ItemHeight = 30;
-            this.cmbPartidoAsign.ItemsAppearance.Parent = this.cmbPartidoAsign;
-            this.cmbPartidoAsign.Location = new System.Drawing.Point(85, 70);
-            this.cmbPartidoAsign.Name = "cmbPartidoAsign";
-            this.cmbPartidoAsign.ShadowDecoration.Parent = this.cmbPartidoAsign;
-            this.cmbPartidoAsign.Size = new System.Drawing.Size(140, 36);
-            this.cmbPartidoAsign.TabIndex = 20;
+            this.dtgListaCandidatos.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // Vista_Candidato
             // 
@@ -573,7 +537,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1183, 641);
-            this.Controls.Add(this.btnAgregarImagen);
             this.Controls.Add(this.grpListaCandidatos);
             this.Controls.Add(this.grpOperaciones);
             this.Controls.Add(this.grpCargosCandidato);
@@ -585,9 +548,9 @@
             this.grpCandidato.PerformLayout();
             this.grpDatosCandidato.ResumeLayout(false);
             this.grpDatosCandidato.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbImagenCandidato)).EndInit();
             this.grpCargosCandidato.ResumeLayout(false);
             this.grpCargosCandidato.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbImagenCandidato)).EndInit();
             this.grpOperaciones.ResumeLayout(false);
             this.grpListaCandidatos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgListaCandidatos)).EndInit();
@@ -598,9 +561,7 @@
         #endregion
 
         public Guna.UI2.WinForms.Guna2GroupBox grpCandidato;
-        public System.Windows.Forms.Label lblPartido;
         public System.Windows.Forms.Label lblCurp;
-        public Guna.UI2.WinForms.Guna2ComboBox cmbPartidos;
         public Guna.UI2.WinForms.Guna2Button btnBuscar;
         public Guna.UI2.WinForms.Guna2GroupBox grpDatosCandidato;
         public System.Windows.Forms.Label lblApellidoM;
@@ -616,13 +577,13 @@
         public Guna.UI2.WinForms.Guna2Button btnEditar;
         public Guna.UI2.WinForms.Guna2Button btnGuardar;
         public Guna.UI2.WinForms.Guna2GroupBox grpListaCandidatos;
-        public Guna.UI2.WinForms.Guna2DataGridView dtgListaCandidatos;
-        public Guna.UI2.WinForms.Guna2Button btnAgregarImagen;
-        public Guna.UI2.WinForms.Guna2PictureBox ptbImagenCandidato;
         public Guna.UI2.WinForms.Guna2TextBox txtCurp;
         public Guna.UI2.WinForms.Guna2TextBox txtApellidoM;
         public Guna.UI2.WinForms.Guna2TextBox txtApellidoP;
         public Guna.UI2.WinForms.Guna2TextBox txtNombre;
         public Guna.UI2.WinForms.Guna2ComboBox cmbPartidoAsign;
+        public Guna.UI2.WinForms.Guna2DataGridView dtgListaCandidatos;
+        public Guna.UI2.WinForms.Guna2Button btnAgregarImagen;
+        public System.Windows.Forms.PictureBox ptbImagenCandidato;
     }
 }

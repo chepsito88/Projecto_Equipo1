@@ -14,8 +14,7 @@ namespace DigiVot_Modelo
         private SqlCommand cmdComando;
         private SqlDataAdapter daAdapter = null;
         private DataTable Dtt = null;
-        Modelo_Conexion cnnConexion;
-        VO_Perfiles Perfil;
+        Modelo_Conexion cnnConexion;       
         VO_PerfilReglas PerfilReglas;
 
 
@@ -43,11 +42,11 @@ namespace DigiVot_Modelo
             }
             catch (Exception e)
             {
+                System.Windows.Forms.MessageBox.Show("Error: " + e);
                 return false;
             }
             finally
             {
-
                 cnnConexion.Cerrar();
                 cmdComando.Dispose();
             }
@@ -79,8 +78,9 @@ namespace DigiVot_Modelo
 
                 return lstPerfiles;
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
+                System.Windows.Forms.MessageBox.Show("Error: " + e);
                 return null;
             }
             finally

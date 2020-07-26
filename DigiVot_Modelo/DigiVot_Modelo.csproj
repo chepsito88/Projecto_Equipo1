@@ -33,6 +33,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,25 +44,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract_Factory\Construye_DAO.cs" />
-    <Compile Include="DAO\DAO_Candidato.cs" />
-    <Compile Include="DAO\DAO_Ciudadano.cs" />
-    <Compile Include="DAO\DAO_Elecciones.cs" />
-    <Compile Include="DAO\DAO_Partidos.cs" />
+    <Compile Include="DAO\Adapter_DAO_Candidato.cs" />
     <Compile Include="DAO\DAO_Reglas.cs" />
     <Compile Include="DAO\DAO_Perfiles.cs" />
     <Compile Include="Abstract_Factory\ICrud.cs" />
     <Compile Include="DAO\DAO_PerfilReglas.cs" />
     <Compile Include="DAO\DAO_Login.cs" />
+    <Compile Include="DAO\DAO_Ciudadano.cs" />
+    <Compile Include="DAO\DAO_Elecciones.cs" />
+    <Compile Include="DAO\DAO_Partidos.cs" />
+    <Compile Include="DAO\DAO_Candidato.cs" />
+    <Compile Include="DAO\DAO_Funcionario.cs" />
     <Compile Include="Singleton\Singleton_Conexion.cs" />
     <Compile Include="VO\VO_Candidato.cs" />
-    <Compile Include="VO\VO_Ciudadano.cs" />
-    <Compile Include="VO\VO_Elecciones.cs" />
-    <Compile Include="VO\VO_Partidos.cs" />
     <Compile Include="VO\VO_Reglas.cs" />
     <Compile Include="VO\VO_Perfil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VO\VO_PerfilReglas.cs" />
     <Compile Include="VO\VO_User.cs" />
+    <Compile Include="VO\VO_Partidos.cs" />
+    <Compile Include="VO\VO_Ciudadano.cs" />
+    <Compile Include="VO\VO_Tipo_Eleccion.cs" />
+    <Compile Include="VO\VO_Funcionarios.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
