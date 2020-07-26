@@ -73,6 +73,12 @@
     <Compile Include="Vista_Candidato.Designer.cs">
       <DependentUpon>Vista_Candidato.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista_Casillas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista_Casillas.Designer.cs">
+      <DependentUpon>Vista_Casillas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista_Ciudadano.cs">
       <SubType>Form</SubType>
     </Compile>

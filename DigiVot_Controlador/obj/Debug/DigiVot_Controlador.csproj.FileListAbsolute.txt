@@ -38,3 +38,16 @@ C:\Projecto\Projecto_Equipo1\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.c
 C:\Projecto\Projecto_Equipo1\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.csproj.CopyComplete
 C:\Projecto\Projecto_Equipo1\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.dll
 C:\Projecto\Projecto_Equipo1\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.pdb
+C:\Users\Eusebio\Desktop\Digi\Projecto_Equipo1\DigiVot_Controlador\bin\Debug\DigiVot_Controlador.dll
+C:\Users\Eusebio\Desktop\Digi\Projecto_Equipo1\DigiVot_Controlador\bin\Debug\DigiVot_Controlador.pdb
+C:\Users\Eusebio\Desktop\Digi\Projecto_Equipo1\DigiVot_Controlador\bin\Debug\DigiVot_Modelo.dll
+C:\Users\Eusebio\Desktop\Digi\Projecto_Equipo1\DigiVot_Controlador\bin\Debug\DigiVot_Vista.dll
+C:\Users\Eusebio\Desktop\Digi\Projecto_Equipo1\DigiVot_Controlador\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Eusebio\Desktop\Digi\Projecto_Equipo1\DigiVot_Controlador\bin\Debug\PlaceholderTextBox.dll
+C:\Users\Eusebio\Desktop\Digi\Projecto_Equipo1\DigiVot_Controlador\bin\Debug\DigiVot_Modelo.pdb
+C:\Users\Eusebio\Desktop\Digi\Projecto_Equipo1\DigiVot_Controlador\bin\Debug\DigiVot_Vista.pdb
+C:\Users\Eusebio\Desktop\Digi\Projecto_Equipo1\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.csprojAssemblyReference.cache
+C:\Users\Eusebio\Desktop\Digi\Projecto_Equipo1\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.csproj.CoreCompileInputs.cache
+C:\Users\Eusebio\Desktop\Digi\Projecto_Equipo1\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.csproj.CopyComplete
+C:\Users\Eusebio\Desktop\Digi\Projecto_Equipo1\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.dll
+C:\Users\Eusebio\Desktop\Digi\Projecto_Equipo1\DigiVot_Controlador\obj\Debug\DigiVot_Controlador.pdb
